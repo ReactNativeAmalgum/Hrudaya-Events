@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.bottom-bar-cont {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.col-3,
+.col-6,
+.col-9 {
+  flex: 0 0 auto;
+}
+
+.col-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-6 {
+  width: 45%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.quick-links p,
+.website-links ul li {
+  font-family: "Raleway", sans-serif;
+}
+
+.bottom-logo {
+  margin-top: 50px;
+  width: 80%;
+  border: 2px solid #fffa78;
+  border-radius: 50%;
+  background-color: aqua;
+}
+
+.bottom-social-logo-cont {
+  display: flex;
+  gap: 5%;
+}
+
+.social-logo {
+  font-size: 34px;
+}
+
+h2 {
+  margin: 0 0 10px;
+}
+
+p {
+  margin: 0 0 5px;
+  line-height: 1.5;
+}
+
+.copywrite {
+  display: flex;
+  font-weight: bold;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+
+.date {
+  font-style: italic;
+}
+.bottomCont{
+  width: 50px;
+  height: 50px;
+  background-color: #fffa78;
+}
+/* Default styling for .bottomImg */
+.col-9 .bottomImg {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for .bottom-logo */
+.bottom-logo {
+  width: 80px; /* Default width for smaller screens */
+  margin-right: 50%; /* Adjust margin as needed */
+  border: 2px solid #fffa78;
+  border-radius: 50%;
+  background-color: aqua;
+}
+
+/* Media query for screens between 600px and 899px */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .bottom-logo {
+    margin-top: 50px; 
+    width: 90%; 
+  }
+  .col-9 .bottomImg {
+    margin-right: 60px; 
+  }
+}
+
+
+/* Media query for screens wider than 900px */
+@media screen and (min-width: 900px) {
+  .bottom-logo {
+    width: 80%; 
+    margin-top: 0; 
+  }
+}

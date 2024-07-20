@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Base styles */
+.family-body-cont {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -0.55%;
+  background-color: rgb(4, 5, 5);
+}
+
+.family-body-cont p {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.8em;
+  font-family: Jost, sans-serif;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 50px;
+}
+
+.family-heading {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font: 800 52px lulo-clean-w01-one-bold, lulo-clean-w05-one-bold, sans-serif;
+  letter-spacing: 0.5rem;
+}
+.family-heading-cont {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  background-color: black;
+}
+
+.family-heading {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font: 800 52px lulo-clean-w01-one-bold, lulo-clean-w05-one-bold, sans-serif;
+  letter-spacing: 0.5rem;
+}
+
+.family-heading {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font: 800 52px lulo-clean-w01-one-bold, lulo-clean-w05-one-bold, sans-serif;
+  letter-spacing: 0.5rem;
+}
+
+.family-img {
+  width: 100%;
+  max-width: 980px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 5%;
+}
+
+.card-family-body-cont {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+.family-card-cont {
+  width: 65%;
+  justify-content: center;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-top-right-radius: 8%;
+  border-bottom-left-radius: 8%;
+  color: aliceblue;
+  background: radial-gradient(
+    circle at center,
+    transparent 70%,
+    rgba(255, 204, 0, 0.5) 70%
+  );
+}
+
+.family-inner-card-cont {
+  width: 99%;
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: aliceblue;
+  border-top-right-radius: 8%;
+  border-bottom-left-radius: 8%;
+  justify-content: center;
+  gap: 10%;
+  padding: 10%;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("https://img.freepik.com/free-vector/gradient-luxury-background_23-2148981102.jpg?w=826&t=st=1721367981~exp=1721368581~hmac=65918ffcfac5984578b700a1013034722ff1496e9f3abdedfd67fa1d5ee679c1");
+}
+
+.family-inner-card-cont h1 {
+  font-size: 54px;
+  background-color: transparent;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.family-inner-card-cont::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border: 5px solid transparent;
+  border-image: radial-gradient(
+      circle,
+      rgba(255, 204, 0, 0.8),
+      rgba(255, 204, 0, 0)
+    )
+    1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.family-inner-card-cont li {
+  font-size: 24px;
+  margin: 9px;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* Responsive styles for screens 1024px wide and below */
+@media (max-width: 1024px) {
+  .family-body-cont p {
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .family-heading,
+  .family-heading {
+    font-size: 40px;
+  }
+
+  .family-img {
+    max-width: 100%;
+  }
+
+  .family-card-cont {
+    width: 50%;
+    height: auto;
+    flex-direction: column;
+    border-radius: 4%;
+    align-items: center;
+    border-radius: 40px;
+  }
+
+  .family-inner-card-cont {
+    padding: 10%;
+    gap: 5%;
+  }
+
+  .family-inner-card-cont h1 {
+    font-size: 40px;
+  }
+
+  .family-inner-card-cont li {
+    font-size: 20px;
+  }
+  .card-family-body-cont{
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .family-body-cont p {
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .family-heading {
+    font-size: 46px;
+  }
+
+  .family-img {
+    max-width: 80%;
+  }
+
+  .family-card-cont {
+    width: 60%;
+    height: auto;
+    flex-direction: column;
+    border-radius: 6%;
+  }
+
+  .family-inner-card-cont {
+    padding: 7%;
+    gap: 8%;
+  }
+
+  .family-inner-card-cont h1 {
+    font-size: 48px;
+  }
+
+  .family-inner-card-cont li {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .family-body-cont p {
+    font-size: 18px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .family-heading {
+    font-size: 46px;
+  }
+
+  .family-img {
+    max-width: 80%;
+  }
+
+  .family-card-cont {
+    width: 60%;
+    height: auto;
+    flex-direction: column;
+    border-radius: 6%;
+  }
+
+  .family-inner-card-cont {
+    padding: 7%;
+    gap: 8%;
+  }
+
+  .family-inner-card-cont h1 {
+    font-size: 48px;
+  }
+
+  .family-inner-card-cont li {
+    font-size: 18px;
+  }
+}
