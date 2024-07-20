@@ -144,6 +144,14 @@
   margin-top: 5px;
 }
 
+.gmap {
+  width: 100%;
+  border-radius: 10px;
+  background-color: black;
+  border: transparent;
+  padding: 1.5px;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 1024px) {
   .contact-row {

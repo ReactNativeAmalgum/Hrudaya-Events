@@ -49,10 +49,10 @@ export default function Service() {
                 slidesPerView: 2,
                 spaceBetween: 50,
               },
-              1440:{
-                slidesPerView:5,
-                spaceBetween:60
-              }
+              1440: {
+                slidesPerView: 5,
+                spaceBetween: 60,
+              },
             }}
             modules={[Pagination]}
           >
@@ -86,7 +86,9 @@ export default function Service() {
               <div className="swiper-card">
                 <div className="slide-content">
                   <img src={video} alt="video" className="slide-image" />
-                  <span className="slide-text">PHOTO & VIDEO (GRAPHY)</span>
+                  <span style={{ fontSize: 14 }} className="slide-text">
+                    PHOTO & VIDEO (GRAPHY)
+                  </span>
                 </div>
               </div>
             </SwiperSlide>
@@ -105,7 +107,12 @@ export default function Service() {
             <SwiperSlide>
               <div className="swiper-card">
                 <div className="slide-content">
-                  <img src={sangeet} alt="sangeet" className="slide-image" />
+                  <img
+                    src={sangeet}
+                    alt="sangeet"
+                    className="slide-image"
+                    style={{ height: 215, marginTop: 10, marginBottom: 15 }}
+                  />
                   <span className="slide-text">
                     SANGEET & DANCE CHOREOGRAPHY
                   </span>
@@ -119,6 +126,7 @@ export default function Service() {
                     src={live_band}
                     alt="live_band"
                     className="slide-image"
+                    style={{ height: 215, marginTop: 10, marginBottom: 15 }}
                   />
                   <span className="slide-text">LIVE BAND & MUSIC SHOW</span>
                 </div>
@@ -139,7 +147,12 @@ export default function Service() {
             <SwiperSlide>
               <div className="swiper-card">
                 <div className="slide-content">
-                  <img src={make_up} alt="make_up" className="slide-image" />
+                  <img
+                    src={make_up}
+                    alt="make_up"
+                    className="slide-image"
+                    style={{ height: 215, marginTop: 10, marginBottom: 15 }}
+                  />
                   <span className="slide-text">MAKEUP & MEHNDI ARTIST</span>
                 </div>
               </div>

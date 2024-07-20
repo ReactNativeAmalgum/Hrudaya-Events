@@ -11,6 +11,7 @@ import {
   FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function BottomBar() {
   return (
@@ -26,9 +27,9 @@ export default function BottomBar() {
                 <div>
                   <h2 className="heading">HEAD OFFICE</h2>
                   <p>Hrudaya Events</p>
-                  <p>Sai Kripa, B-502, Sector 5</p>
-                  <p>Charkop Sector 9, Kandivali West</p>
-                  <p>Mumbai, Maharashtra 400067</p>
+                  <p>7/D17, Chandralok Soc</p>
+                  <p>Sector 10, Kopar Khairne,</p>
+                  <p>Navi Mumbai, Maharashtra 400067</p>
                 </div>
               </div>
               <div className="col-6">
@@ -39,15 +40,15 @@ export default function BottomBar() {
                     <span className="col-6-span">:(+91) 8669016952</span>
                   </p>
                   <p>
-                    Ask We & You{" "}
-                    <span className="col-6-span">:(+91) 8669016952</span>
+                    Ask Hrudaya{" "}
+                    <span className="col-6-span">:(+91) 08669016952</span>
                   </p>
                   <p>
-                    We & You Helpline{" "}
-                    <span className="col-6-span">:(+91) 8669016952</span>
+                    Hrudaya Helpline{" "}
+                    <span className="col-6-span">:(+91) 086690 16952</span>
                   </p>
                   <p>
-                    We & You 24/7{" "}
+                    Hrudaya 24/7{" "}
                     <span className="col-6-span">:(+91) 8669016952</span>
                   </p>
                   <p>Email: info@hrudayaevents.com</p>
@@ -59,10 +60,11 @@ export default function BottomBar() {
               <div className="col-6">
                 <div className="quick-links">
                   <h2 className="heading">QUICK LINK</h2>
-                  <p>Home</p>
-                  <p>About Us</p>
-                  <p>Our Services</p>
-                  <p>Contact Us</p>
+                  <p ><Link  className="quick-links-p"to={'/'} >Home</Link></p>
+                  <p  ><Link className="quick-links-p" to={'/about-us'}>About Us</Link></p>
+                  <p ><Link  className="quick-links-p"to={'/events'}>Events</Link></p>
+                  <p ><Link  className="quick-links-p"to={'/service'}>Our Services</Link></p>
+                  <p ><Link  className="quick-links-p"to={'/contact'}>Contact Us</Link></p>
                 </div>
               </div>
               <div className="col-6">
@@ -75,18 +77,10 @@ export default function BottomBar() {
                     <FaWhatsapp className="social-logo" color="green" />
                   </div>
                 </div>
-                <div className="website-links">
-                  <h2 className="heading" style={{ marginTop: 10 }}>
-                    OUR WEBSITES LINKS
-                  </h2>
-                  <ul>
-                    <li>www.hrudayaevents.com</li>
-                    <li>www.hrudayaevents.com</li>
-                  </ul>
-                </div>
+                
               </div>
               <p>
-                We and You Events, confirm that we are not affiliated with any
+                Hrudaya Events, confirm that we are not affiliated with any
                 venue, banquet hall, or property regarding the photos, videos,
                 and details displayed on our website. All images, videos, and
                 descriptions are used for reference and promotional purposes
@@ -96,7 +90,7 @@ export default function BottomBar() {
                 owners.
               </p>
               <p className="copywrite">
-                "CopyRight © 2024 We & You Events. All Rights Reserved."
+                "CopyRight © 2024 Hrudaya Events. All Rights Reserved."
                 <span className="date">09/07/2024</span>
               </p>
 
