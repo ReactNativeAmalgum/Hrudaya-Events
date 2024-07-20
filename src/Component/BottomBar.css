@@ -84,7 +84,7 @@ p {
 .date {
   font-style: italic;
 }
-.bottomCont{
+.bottomCont {
   width: 50px;
   height: 50px;
   background-color: #fffa78;
@@ -106,22 +106,28 @@ p {
   background-color: aqua;
 }
 
+.quick-links .quick-links-p {
+  text-decoration: none;
+  color: white;
+}
+.quick-links .quick-links-p:hover{
+  color: orange;
+}
 /* Media query for screens between 600px and 899px */
 @media screen and (min-width: 600px) and (max-width: 899px) {
   .bottom-logo {
-    margin-top: 50px; 
-    width: 90%; 
+    margin-top: 50px;
+    width: 90%;
   }
   .col-9 .bottomImg {
-    margin-right: 60px; 
+    margin-right: 60px;
   }
 }
-
 
 /* Media query for screens wider than 900px */
 @media screen and (min-width: 900px) {
   .bottom-logo {
-    width: 80%; 
-    margin-top: 0; 
+    width: 80%;
+    margin-top: 0;
   }
 }

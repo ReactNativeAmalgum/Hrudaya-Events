@@ -19,7 +19,7 @@ export default function Family_Events() {
         />
         <div>
           <p>
-            We & You Corporate Event Planners and one of the Best Event
+            Hrudaya Corporate Event Planners and one of the Best Event
             Management Company with our services available. Our forte lies in
             delivering cutting edge, innovative and professional event
             management services. We are a bunch of fun loving, energetic and

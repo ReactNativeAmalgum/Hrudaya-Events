@@ -90,7 +90,18 @@ export default function Contact() {
             </div>
           </div>
         </div>
+       
       </div>
+      <div className="gmap">
+          <iframe
+            className="gmap"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.195818201747!2d73.00273967505258!3d19.09906358211026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1986b04f999%3A0xc22bd6f28bfe8438!2sHrudaya%20Events%20%7C%20Wedding%20Planner%20in%20Navi%20Mumbai%20%7C%20Birthday%20Planner%20%7C%20Baby%20Shower%20%7C%20Catering%20%7C%20Corporate%20Events!5e0!3m2!1sen!2sin!4v1721477071925!5m2!1sen!2sin"
+            allowFullScreen=""
+            loading="lazy"
+            style={{backgroundColor:'black', borderColor:'black'}}
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
       <BottomBar />
     </>
   );
