@@ -9,11 +9,7 @@ export default function NavBar() {
     <div className="body-container">
       <div className="image-slogan-cont">
         <img src={logo} alt="logo" className="navbar-logo" />
-        <div className="slogan-cont">
-          <span className="slogan">"One Heart, One Love, One Team"</span>
-          <br />
-          <span className="slogan">For All Your Dreams</span>
-        </div>
+      
       </div>
 
       <ul className="navbar-routes">
@@ -56,3 +52,12 @@ export default function NavBar() {
     </div>
   );
 }
+
+
+/**
+ *   <div className="slogan-cont">
+          <span className="slogan">"One Heart, One Love, One Team"</span>
+          <br />
+          <span className="slogan">For All Your Dreams</span>
+        </div>
+ */
