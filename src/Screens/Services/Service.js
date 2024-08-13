@@ -42,7 +42,7 @@ export default function Service() {
                 spaceBetween: 20,
               },
               768: {
-                slidesPerView: 4,
+                slidesPerView: 1,
                 spaceBetween: 40,
               },
               1024: {
