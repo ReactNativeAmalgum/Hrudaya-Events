@@ -1,3 +1,12 @@
+import catering from '../Component/Images/catering.jpg'
+import decoration from '../Component/Images/decoration.jpg'
+import venue from '../Component/Images/venue.jpg'
+import photo from '../Component/Images/photography.jpg'
+import celibritiy from '../Component/Images/celebrity.jpg'
+import sangeet from '../Component/Images/sangeet.jpg'
+import live_band from '../Component/Images/live_band.jpg'
+import themedecoration from '../Component/Images/theme.jpg'
+import makeup_mehndi from '../Component/Images/mehndi.jpeg'
 export const ServiceData = [
   {
     id: 1,
@@ -6,10 +15,7 @@ export const ServiceData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
     img: [
-      "http://localhost:3000/static/media/catering.e60ddb52de29054ea06d.jpg",
-      "http://localhost:3000/static/media/catering.e60ddb52de29054ea06d.jpg",
-
-      "http://localhost:3000/static/media/catering.e60ddb52de29054ea06d.jpg",
+      catering,
     ],
   },
   {
@@ -20,8 +26,7 @@ export const ServiceData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
 
     img: [
-      "http://localhost:3000/static/media/decoration.ae2092c2c4f15e1d9382.jpg",
-      "http://localhost:3000/static/media/decoration.ae2092c2c4f15e1d9382.jpg",
+      decoration
     ],
   },
   {
@@ -32,8 +37,7 @@ export const ServiceData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
 
     img: [
-      "http://localhost:3000/static/media/venue.bc87a9d69aea872b0886.jpg",
-      "http://localhost:3000/static/media/venue.bc87a9d69aea872b0886.jpg",
+      venue
     ],
   },
   {
@@ -44,9 +48,9 @@ export const ServiceData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
 
     img: [
-      "http://localhost:3000/static/media/photography.f169385b3ba1bdd10e74.jpg",
+      photo,
+      photo,
 
-      "http://localhost:3000/static/media/photography.f169385b3ba1bdd10e74.jpg",
     ],
   },
   {
@@ -57,9 +61,8 @@ export const ServiceData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
 
     img: [
-      "http://localhost:3000/static/media/celebrity.12843fb1a66bff713663.jpg",
-
-      "http://localhost:3000/static/media/celebrity.12843fb1a66bff713663.jpg",
+      celibritiy,
+      celibritiy
     ],
   },
   {
@@ -70,9 +73,7 @@ export const ServiceData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
 
     img: [
-      "http://localhost:3000/static/media/sangeet.210f87bf7157216361d9.jpg",
-
-      "http://localhost:3000/static/media/sangeet.210f87bf7157216361d9.jpg",
+      sangeet
     ],
   },
   {
@@ -83,9 +84,7 @@ export const ServiceData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
 
     img: [
-      "http://localhost:3000/static/media/live_band.0526b187d1e3bc2a47bf.jpg",
-
-      "http://localhost:3000/static/media/live_band.0526b187d1e3bc2a47bf.jpg",
+      live_band
     ],
   },
   {
@@ -96,8 +95,7 @@ export const ServiceData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
 
     img: [
-      "http://localhost:3000/static/media/live_band.0526b187d1e3bc2a47bf.jpg",
-      "http://localhost:3000/static/media/live_band.0526b187d1e3bc2a47bf.jpg",
+      themedecoration
     ],
   },
   {
@@ -108,8 +106,7 @@ export const ServiceData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
 
     img: [
-        "http://localhost:3000/static/media/live_band.0526b187d1e3bc2a47bf.jpg",
-        "http://localhost:3000/static/media/live_band.0526b187d1e3bc2a47bf.jpg",
+        makeup_mehndi
     ],
   },
 ];
