@@ -36,7 +36,7 @@ export default function Family_Events() {
             {/* <div> */}
             <h1>We Organise:</h1>
             <div>
-              <ul>
+              <ul className="event-menu">
                 <li>Birthdays</li>
                 <li>Engagements</li>
                 <li>Weddings</li>

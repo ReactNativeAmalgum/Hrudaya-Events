@@ -3,7 +3,7 @@ import { FaInstagram } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
 import logo from "./Images/logo.jpg";
 import { Link } from "react-router-dom";
-import './BottomBar.css'
+import "./BottomBar.css";
 function BottomBar() {
   return (
     <>
@@ -21,7 +21,7 @@ function BottomBar() {
                     </div>
                   </div>
                 </div>
-                <div className="col mb-8">
+                <div className="col mb-8 bottom-link">
                   <div className="footer-widget footer-list">
                     <h3 className="footer-title">Useful Link</h3>
                     <ul>
@@ -30,13 +30,16 @@ function BottomBar() {
                       </li>
 
                       <li>
-                        <Link to="/interior-designing">Service</Link>
+                        <Link to="/service/1">Service</Link>
                       </li>
                       <li>
-                        <Link to="/workpage">Work</Link>
+                        <Link to="/about-us">About</Link>
                       </li>
                       <li>
-                        <Link to="/contactpage">Contact Us </Link>
+                        <Link to="/events/family">Event</Link>
+                      </li>
+                      <li>
+                        <Link to="/contact">Contact Us </Link>
                       </li>
                     </ul>
                   </div>
@@ -44,22 +47,21 @@ function BottomBar() {
                 <div className="col mb-8">
                   <div className="footer-widget footer-list">
                     <h3 className="footer-title">Contact Us</h3>
-                    <ul>
+                    <ul className="footer-link-li">
                       <li>
                         <span className="titl">T:</span>
-                        <span className="desc">90824 89772</span>
+                        <span className="desc">086690 16952</span>
                       </li>
                       <li>
                         <span className="titl">E:</span>
                         <span className="desc">
-                          hnymumbai@gmail.com <br />
+                        info@hrudayaevents.com <br />
                         </span>
                       </li>
                       <li>
                         <span className="titl">A:</span>
                         <span className="desc">
-                          A220, Business complex, LODHA AMARA, Kolshet Rd,
-                          Thane, Maharashtra 400607
+                        7/D/17, Chandralok Soc, Sector 10, Kopar Khairane, Navi Mumbai, Maharashtra 400709
                         </span>
                       </li>
                     </ul>
@@ -68,18 +70,18 @@ function BottomBar() {
                 <div className="col mb-8">
                   <div className="footer-widget footer-list">
                     <h3 className="footer-title">Social media</h3>
-                    <ul>
+                    <ul className="soical-ul">
                       <Link className="google-plus" to="">
                         <i className="fa fa-google-plus">
                           <FaInstagram />
                         </i>
                       </Link>
-                      <Link className="facebook" to="">
+                      <Link className="google-plus" to="">
                         <i className="fa fa-facebook">
                           <FaFacebookF />
                         </i>
                       </Link>
-                      <Link className="facebook" to="">
+                      <Link className="google-plus" to="">
                         <i className="fa fa-facebook">
                           <CiTwitter />
                         </i>
@@ -96,7 +98,10 @@ function BottomBar() {
                 <p>
                   Copyright ©2024 All rights reserved | HNY Interiors{" "}
                   <i className="fa fa-heart" /> by{" "}
-                  <Link className="skdm" to="https://skdm.in/contact-us-digital-marketing">
+                  <Link
+                    className="skdm"
+                    to="https://skdm.in/contact-us-digital-marketing"
+                  >
                     {" "}
                     shree krishns digital marketing{" "}
                   </Link>
