@@ -3,12 +3,11 @@
   height: auto;
 }
 
-.bg-body-tertiary{
+.bg-body-tertiary {
   background-color: black !important;
 }
 
 /******************NAVLINKS******************/
-
 
 .navbar-nav .nav-link {
   color: white !important; /* Force the link color to white */
@@ -27,7 +26,6 @@
   color: rgb(211, 211, 211) !important; /* Hover and focus state */
 }
 
-
 /* Active link hover state */
 .navbar-nav .nav-link.active:hover {
   color: gold !important; /* Change active link color to gold on hover */
@@ -44,28 +42,43 @@
 .navbar-nav .dropdown-menu .dropdown-item:hover,
 .navbar-nav .dropdown-menu .dropdown-item:focus {
   background-color: lightgray !important; /* Optional: Change background on hover */
-  color: black !important; /* Optional: Change text color on hover */
+  color: black !important;
 }
 .navbar-nav .dropdown-item.active,
 .navbar-nav .dropdown-item:active {
   background-color: lightgray;
+
 }
 .navbar-toggler {
   background-color: white !important;
+  
 }
 
-.linkdeco{
+.linkdeco {
   text-decoration: none;
 }
-.dropdown-item.active, .dropdown-item:active{
+.dropdown-item.active,
+.dropdown-item:active {
   background-color: none !important;
 }
-@media screen and (max-width:768px) {
-  .navbar-nav{
+
+
+@media screen and (max-width: 768px) {
+  .navbar-nav {
     text-align: right;
     padding-right: 50px;
     background-color: rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: end;
   }
+
+  .nav-item .dropdown-menu.show {
+    width: 100%;
+    text-align: end !important;
+    /* display: contents; */
+  }
+  .basic-nav-dropdown{
+    text-align: end !important;
+  }
+  
 }

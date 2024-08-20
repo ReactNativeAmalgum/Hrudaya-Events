@@ -87,7 +87,7 @@
   }
   .custom-col{
     border-right: 0px;
-    display: contents;
+    display: contents !important;
     text-align: center;
   }
   .service-left-card p{

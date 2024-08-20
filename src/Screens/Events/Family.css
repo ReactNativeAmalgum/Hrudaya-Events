@@ -127,7 +127,11 @@
   border-radius: 50%;
   pointer-events: none;
 }
+.family-inner-card-cont .event-menu{
+  display: contents !important;
+  width: 100%;
 
+}
 /* Responsive styles */
 @media (max-width: 1440px) {
   .family-body-cont p {
