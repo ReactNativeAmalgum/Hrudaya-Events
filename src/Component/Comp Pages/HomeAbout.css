@@ -1,0 +1,130 @@
+.section2-body-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+    url("../../Component/Images/section2-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.section2-body-cont .card {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: aliceblue;
+  width: 100%;
+  max-width: 800px; /* Set maximum width for larger screens */
+  text-align: left;
+}
+
+.abt-head {
+  font-size: 2.5rem; /* Default font size */
+  color: white;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  font-size: 1.125rem; /* Default font size for text */
+  color: white;
+  text-align: justify;
+  /* font-family: "Didot eText W01 Italic" !important; */
+}
+
+.card-body{
+  padding-right: 20% !important;
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1024px) {
+  .section2-body-cont .card {
+    max-width: 700px;
+    padding: 15px;
+
+  }
+  .card-body{
+    padding-right: 20% !important;
+
+  }
+
+  .abt-head {
+    font-size: 2rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) {
+  .section2-body-cont .card {
+    max-width: 600px;
+    padding: 10px;
+  }
+
+  .abt-head {
+    font-size: 1.75rem;
+  }
+
+  .card-text {
+    font-size: 0.9375rem;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+  .section2-body-cont .card {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .abt-head {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .card-text {
+    font-size: 0.6rem;
+  }
+  .card-body {
+    padding-right: 0% !important;
+}
+}
+
+/* Very small devices (between 425px and 320px) */
+@media (max-width: 425px) and (min-width: 320px) {
+  .section2-body-cont .card {
+    max-width: 200px;
+    padding: 10px;
+  }
+
+  .abt-head {
+    /* font-size: 12px !important; */
+  }
+
+  .card-text {
+    font-size: calc(0.75rem + (1vw - 3.2px));
+  }
+}
+
+/* Tiny devices (less than 320px) */
+@media (max-width: 320px) {
+  .section2-body-cont .card {
+    /* max-width: 200px !important; */
+    padding: 10px;
+  }
+
+  .abt-head {
+    font-size: 1rem !important;
+  }
+
+  .card-text {
+    font-size: 0.5rem !important ;
+  }
+}

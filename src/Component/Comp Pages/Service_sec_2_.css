@@ -1,0 +1,445 @@
+/* Service_sec_2_css.css */
+
+.service_section_container {
+  padding: 50px 50px;
+  width: 100%;
+  background-color: #f9f9f9; /* Light grey background */
+}
+
+.service_sec2_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service_sec2_custom-col {
+  padding: 0 15px;
+}
+
+.service2_img_cont {
+  position: relative;
+  width: 100%;
+  height: 250px !important;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.service-swiper-img-cont {
+  width: 100%;
+  height: 290px;
+  border-radius: 30px;
+  position: relative;
+  border-radius: 30px;
+}
+.service-swiper-img-cont img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.service2_img_cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-descp-cont {
+  bottom: 20px;
+  left: 20px;
+  color: rgb(0, 0, 0);
+  padding-top: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.title-descp-cont h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.title-descp-cont p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0px !important;
+}
+
+.mySwiper {
+  margin-top: 20px;
+}
+
+.service2_custom_col {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service2_contact-cont {
+  display: flex;
+  border: 1px solid #ddd;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.service2_contact-cont h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.service2_contact-cont p {
+  font-size: 16px;
+  color: #777;
+}
+
+.bar_heading_cont {
+  display: flex;
+  align-items: center;
+}
+
+.service_sec_2_bar {
+  height: 3px;
+  width: 30px;
+  background-color: #000;
+  /* margin-right: 10px; */
+}
+
+.bar_heading_cont h3 {
+  margin: 0; /* Remove any default margin */
+  font-size: 1.3rem;
+}
+
+.widget-content {
+  padding-top: 20px;
+  border: 1px solid #ddd;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 30px;
+}
+
+.service-contact-btn {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  /* margin: 0 50px; */
+  padding: 10px;
+}
+
+.service-contact-btn p {
+  margin: 0;
+  color: black;
+}
+
+.text-primary_h {
+  color: black;
+  text-decoration: none !important;
+  font-size: 14px;
+}
+
+.service-contact-btn {
+  text-decoration: none;
+}
+.service-contact-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.second-column {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.service2_custom_col {
+  /* padding: 0 15px; */
+}
+
+.service-second-column-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.getintouch {
+  text-align: center;
+}
+.service-second-column-col {
+  margin-bottom: 20px;
+  /* background-color: orange; */
+  padding: 30px;
+  border: 1px solid #ddd;
+  width: 100% !important;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  /* display: contents; */
+}
+
+.service2_contact-cont {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service2_contact-cont h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service2_contact-cont p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.service-contact-btn {
+  display: inline-block;
+  /* background-color: #007bff; */
+  color: #232222;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.service-contact-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.widget-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bar_heading_cont {
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.service_sec_2_bar {
+  /* width: 50px; */
+  height: 2px;
+  background-color: #020202;
+  /* margin-bottom: 10px; */
+  margin-right: 10px;
+}
+
+.widget-list {
+  list-style: none;
+  padding: 0;
+}
+
+.widget-list__item {
+  margin-bottom: 10px;
+}
+
+.widget-list__link {
+  color: #333 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.widget-list__link:hover {
+  color: #007bff;
+}
+
+.text-primary_h {
+  color: #007bff;
+}
+
+.service-custom-cont {
+}
+
+/* Medium Devices (Desktops, 1024px and below) */
+@media (max-width: 1024px) {
+  .service_section_container {
+    padding: 40px 30px;
+  }
+
+  .title-descp-cont {
+    /* padding: 15px; */
+  }
+
+  .title-descp-cont h3 {
+    font-size: 1.2rem;
+  }
+
+  .title-descp-cont p {
+    font-size: 0.9rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  .service2_contact-cont h2 {
+    font-size: 28px;
+  }
+
+  .service2_contact-cont p {
+    font-size: 15px;
+  }
+
+  .service-contact-btn {
+    /* margin: 0 40px; */
+  }
+
+  .text-primary_h {
+    font-size: 13px;
+  }
+}
+
+/* Small Devices (Tablets, 768px and below) */
+@media (max-width: 768px) {
+  .service_section_container {
+    padding: 30px 20px;
+  }
+  .service_sec2_row {
+    flex-direction: column;
+    display: flex;
+  }
+  .service_sec2_custom-col {
+    display: contents;
+  }
+
+  .second-column {
+    padding-top: 20px !important;
+  }
+
+  .title-descp-cont {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .title-descp-cont h3 {
+    font-size: 1.2rem;
+  }
+
+  .title-descp-cont p {
+    font-size: 0.8rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  .service2_img_cont {
+    height: 200px !important;
+  }
+
+  .service2_contact-cont h2 {
+    font-size: 26px;
+  }
+
+  .service2_contact-cont p {
+    font-size: 14px;
+  }
+
+  .service-contact-btn {
+    /* margin: 0 30px; */
+  }
+
+  .text-primary_h {
+    font-size: 12px;
+  }
+  .second-column {
+    display: contents;
+    top: 50px;
+    /* max-width: 200px !important; */
+  }
+  .service-second-column-row {
+    margin-top: 30px !important;
+  }
+}
+
+/* Extra Small Devices (Phones, 576px and below) */
+@media (max-width: 576px) {
+  .service_section_container {
+    padding: 20px 10px;
+  }
+
+  .service_sec2_row {
+    flex-direction: column;
+  }
+
+  .title-descp-cont h3 {
+    font-size: 1.1rem;
+  }
+
+  .title-descp-cont p {
+    font-size: 0.7rem;
+  }
+
+  h5 {
+    font-size: 0.9rem;
+  }
+
+  .service2_img_cont {
+    height: 150px !important;
+  }
+
+  .service2_contact-cont h2 {
+    font-size: 24px;
+  }
+
+  .service2_contact-cont p {
+    font-size: 13px;
+  }
+
+  .service-contact-btn {
+    /* margin: 0 20px; */
+  }
+
+  .text-primary_h {
+    font-size: 11px;
+  }
+}
+
+/* Extra Extra Small Devices (Phones, 375px and below) */
+@media (max-width: 375px) {
+  .service_section_container {
+    padding: 15px 5px;
+  }
+
+  .title-descp-cont h3 {
+    font-size: 1rem;
+  }
+
+  .title-descp-cont p {
+    font-size: 0.6rem;
+  }
+
+  h5 {
+    font-size: 0.8rem;
+  }
+
+  .service2_img_cont {
+    height: 120px !important;
+  }
+
+  .service2_contact-cont h2 {
+    font-size: 22px;
+  }
+
+  .service2_contact-cont p {
+    font-size: 12px;
+  }
+
+  .service-contact-btn {
+    /* margin: 0 10px; */
+  }
+
+  .text-primary_h {
+    font-size: 10px;
+  }
+}

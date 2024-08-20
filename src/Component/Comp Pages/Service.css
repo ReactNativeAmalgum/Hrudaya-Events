@@ -1,0 +1,101 @@
+.section3-body-cont {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15%;
+  flex-direction: column;
+  background-color: rgba(236, 234, 234, 0.9);
+}
+.section3-body-cont h1 {
+  font-size: 44px;
+  font-weight: bold;
+  color: white;
+}
+
+.swiper-card-cont {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 50%;
+  margin: 0px auto;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.swiper {
+  width: 100%;
+  /* height: 90%;  */
+}
+
+.swiper-img-cont {
+  width: 100%;
+  height: 310px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.swiper-img-cont img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.service-left-card p{
+  font-family: "Didot eText W01 Italic", serif;
+  padding-left: 5%;
+
+}
+.custom-col{
+
+}
+
+.custom-row{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-col-right{
+  display: block;
+  border-left: 5px solid black;
+  border-top-left-radius: 10px ;
+  border-bottom-left-radius: 10px ;
+}
+
+.swiper-img-cont p {
+  position: absolute; 
+  bottom: 10px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  color: white; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5); 
+  border-radius: 5px; 
+  font-size: 1rem;
+  text-align: center; 
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) {
+  .custom-row{
+    display: flex;
+    flex-direction: column;
+  }
+  .custom-col{
+    border-right: 0px;
+    display: contents;
+    text-align: center;
+  }
+  .service-left-card p{
+    /* padding: 10px; */
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .custom-col-right{
+    display: contents;
+  }
+}

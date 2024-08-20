@@ -1,187 +1,71 @@
-@font-face {
-  font-family: "Didot eText W01 Italic";
-  src: url("https://db.onlinewebfonts.com/t/16efa2896f117dae2debeb23ab4715dd.eot");
-  src: url("https://db.onlinewebfonts.com/t/16efa2896f117dae2debeb23ab4715dd.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/16efa2896f117dae2debeb23ab4715dd.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/16efa2896f117dae2debeb23ab4715dd.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/16efa2896f117dae2debeb23ab4715dd.ttf")
-      format("truetype"),
-    url("https://db.onlinewebfonts.com/t/16efa2896f117dae2debeb23ab4715dd.svg#Didot eText W01 Italic")
-      format("svg");
-}
-
-.body-container {
-  display: flex;
-  background-color: black;
-  padding: 30px;
-  width: 100vw;
-  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu",
-    sans-serif;
-  justify-content: center;
-  margin-right: 20px;
-  align-items: center;
-  gap: 5%;
-}
-
-.image-slogan-cont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-left: 10px;
-}
-
 .navbar-logo {
-  width: 100px;
-  border-radius: 50%;
-  border: 2px solid #fffa78;
-  background-color: aqua;
+  width: 100px !important;
+  height: auto;
 }
 
-.slogan {
-  color: #fffa78;
-  font-style: italic;
-  font-family: "Didot eText W01 Italic";
-  text-align: center;
-  font-size: 18px;
+.bg-body-tertiary{
+  background-color: black !important;
 }
 
-.navbar-routes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  color: white;
-  justify-content: center;
-  font-family: "Didot eText W01 Italic";
-  margin-right: 10px;
-  padding: 10px;
+/******************NAVLINKS******************/
+
+
+.navbar-nav .nav-link {
+  color: white !important; /* Force the link color to white */
 }
 
-.navbar-routes a {
+.link {
+  color: white !important; /* Default color */
+}
+
+.link.active {
+  color: gold !important; /* Color for active link */
+}
+
+.link:hover,
+.link:focus {
+  color: rgb(211, 211, 211) !important; /* Hover and focus state */
+}
+
+
+/* Active link hover state */
+.navbar-nav .nav-link.active:hover {
+  color: gold !important; /* Change active link color to gold on hover */
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: black !important; /* Ensure dropdown background color is black */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+  color: white !important; /* Force dropdown item color to white */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-nav .dropdown-menu .dropdown-item:focus {
+  background-color: lightgray !important; /* Optional: Change background on hover */
+  color: black !important; /* Optional: Change text color on hover */
+}
+.navbar-nav .dropdown-item.active,
+.navbar-nav .dropdown-item:active {
+  background-color: lightgray;
+}
+.navbar-toggler {
+  background-color: white !important;
+}
+
+.linkdeco{
   text-decoration: none;
-  color: white;
-  padding: 14px 20px;
 }
-
-.navbar-routes li {
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
-  list-style-type: none;
-  box-sizing: border-box;
-  border: 1px solid #fffa78;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  font-family: Georgia, Palatino, "Book Antiqua", "Palatino Linotype", serif;
-  font-style: italic;
+.dropdown-item.active, .dropdown-item:active{
+  background-color: none !important;
 }
-
-.navbar-routes li:hover {
-  color: orange;
-  border-color: rgba(172, 168, 168, 0.9);
-}
-
-
-/* Dropdown */
-.nav-dropdown {
-  position: relative;
-}
-
-.nav-dropdown:hover .dropdown-menu {
-  display: block;
-  width: 300px; /* Adjust this width as needed */
-  padding: 10px;
-  background-color: #3b3d35;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 20px;
-  background-color: #3b3d35;
-  border: 1px solid #e0db58;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Adjust this width as needed */
-  padding: 0;
-  z-index: 1000;
-}
-
-.dropdown-menu .dropdown-link {
-  display: block;
-  padding: 5px 20px;
-  color: white;
-  text-decoration: none;
-  font-family: Georgia, Palatino, "Book Antiqua", "Palatino Linotype", serif;
-  font-style: italic;
-  border-bottom: 1px solid #fffa78;
-}
-
-.dropdown-menu .dropdown-link:last-child {
-  border-bottom: none;
-}
-
-.dropdown-menu .dropdown-link:hover {
-  background-color: #555;
-  color: orange;
-}
-
-@media screen and (max-width: 768px) {
-  .body-container {
-    height: 28vh;
-    width: 100vw;
-    flex-direction:row;
-    margin-right: 0;
-    gap: 1%;
+@media screen and (max-width:768px) {
+  .navbar-nav{
+    text-align: right;
+    padding-right: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: end;
   }
-
-  .navbar-logo {
-    width: 80px;
-    height: 80px;
-  }
-
-  .slogan {
-    font-size: 14px;
-  }
-
-  .navbar-routes {
-    gap: 15px;
-    font-size: 14px;
-  }
-
-  .navbar-routes li {
-    font-size: 1rem;
-    padding: 6px;
-  }
-
-  .dropdown-menu {
-    width: 200px;
-    left: 0;
-  }
-
-  .dropdown-menu .dropdown-link {
-    padding: 5px 10px;
-  }
-}
-
-/* Media query for larger screens */
-@media screen and (min-width: 900px) {
-  .navbar-logo {
-    width: 50%;
-    /* width: 180px; */
-    /* height: 180px; */
-  }
-}
-
-@media screen and (min-width:1440px){
-  .navbar-logo {
-    width: 50%;
-    border-radius: 50%;
-  }
-  
 }

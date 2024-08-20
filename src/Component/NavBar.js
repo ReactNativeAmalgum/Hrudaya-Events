@@ -1,63 +1,102 @@
-import React, { useState } from "react";
-import "./NavBar.css"; // Make sure this path is correct relative to your component location
-import logo from "./Images/logo.jpg"; // Adjust the path as per your project structure
-import { Link, NavLink } from "react-router-dom";
-
-export default function NavBar() {
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import logo from "./Images/logo.jpg";
+import "./NavBar.css";
+import { Link, useLocation } from "react-router-dom";
+import { ServiceData } from "../Constant/ServiceData";
+function NavBar() {
+  const location = useLocation();
 
   return (
-    <div className="body-container">
-      <div className="image-slogan-cont">
-        <img src={logo} alt="logo" className="navbar-logo" />
-      
-      </div>
+    <Navbar expand="lg" bg="dark" className="custom-header">
+      <Container>
+        <Navbar.Brand href="#home">
+          <img
+            style={{ width: 100, height: "auto", borderRadius: "50%" }}
+            alt="logo"
+            src={logo}
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link
+              className={location.pathname === "/" ? "link active" : "link"}
+              href="/"
+            >
+              Home
+            </Nav.Link>
 
-      <ul className="navbar-routes">
-        <div>
-          <NavLink to="/">
-            <li>Home</li>
-          </NavLink>
-        </div>
+            <Nav.Link
+              className={
+                location.pathname === "/about-us" ? "link active" : "link"
+              }
+              href="/about-us"
+            >
+              About
+            </Nav.Link>
+            <Nav.Link
+              className={
+                location.pathname === "/contact" ? "link active" : "link"
+              }
+              href="/contact"
+            >
+              Contact
+            </Nav.Link>
+            <NavDropdown title="Services" id="basic-nav-dropdown">
+              {ServiceData.map((s, i) => (
+                <NavDropdown.Item
+                  key={i}
+                  className={
+                    location.pathname === `/service/${s.id}`
+                      ? "link active"
+                      : "link"
+                  }
+                >
+                  <Link className="linkdeco" to={`/service/${s.id}`}>
+                    {s.title.charAt(0).toUpperCase() +
+                      s.title.slice(1).toLowerCase()}
+                  </Link>
+                </NavDropdown.Item>
+              ))}
+            </NavDropdown>
 
-        <div>
-          <NavLink to={"/about-us"}>
-            <li>About Us</li>
-          </NavLink>
-        </div>
-        <div className="nav-dropdown">
-          <NavLink to="/events">
-            <li>Events</li>
-          </NavLink>
-          <ul className="dropdown-menu">
-            <li className="dropdown-link">
-              <Link to="/events/corporate">Corporate Events</Link>
-            </li>
-            <li className="dropdown-link">
-              <Link to="/events/family">Family Events</Link>
-            </li>
-          </ul>
-        </div>
-        <div>
-
-        <NavLink to={"/service"}>
-          <li>Our Services</li>
-        </NavLink>
-        </div>
-        <div>
-        <NavLink to={"/contact"}>
-          <li>Contact Us</li>
-        </NavLink>
-        </div>
-      </ul>
-    </div>
+            <NavDropdown
+              title="Events"
+              id="basic-nav-dropdown"
+              href="/events"
+              className={
+                location.pathname === "/events" ? "link active" : "link"
+              }
+            >
+              <NavDropdown.Item
+                className={
+                  location.pathname === "/events/family"
+                    ? "link active"
+                    : "link"
+                }
+                href="/events/family"
+              >
+                Family
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                className={
+                  location.pathname === "/events/corporate"
+                    ? "link active"
+                    : "link"
+                }
+                href="/events/corporate"
+              >
+                Corporate
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-
-/**
- *   <div className="slogan-cont">
-          <span className="slogan">"One Heart, One Love, One Team"</span>
-          <br />
-          <span className="slogan">For All Your Dreams</span>
-        </div>
- */
+export default NavBar;
