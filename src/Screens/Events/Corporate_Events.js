@@ -6,9 +6,6 @@ import "./Corporate.css";
 export default function Corporate_Events() {
   return (
     <>
-      <NavBar />
-      {/* <div className="corp-heading-cont">
-      </div> */}
 
       <section className="corporate-body-cont">
       <h1 className="corp-heading">CORPORATE EVENTS</h1>

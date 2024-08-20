@@ -13,233 +13,14 @@
       format("svg");
 }
 
-.home-body-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu",
-    sans-serif;
-}
 
-.home-body-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-attachment: fixed;
-  filter: blur(2px);
-  z-index: -1;
-}
-
-.home-body-container h1,
-.home-body-container h2,
-.home-body-container h4,
-.home-body-container h5 {
-  color: white;
-  margin: 10px 0;
-  z-index: 1;
-}
-
-.home-body-container h1,
-.home-body-container h2 {
-  font-size: 5.5rem;
-  font-weight: 700;
-  letter-spacing: 20px;
-}
-.home-body-container h4 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-top: 40px;
-  letter-spacing: 10px;
-  margin-bottom: 40px;
-}
-
-.home-body-container h5 {
-  font-size: 1.5em;
-  font-weight: 900;
-  font-family: "Didot eText W01 Italic", serif;
-}
-
-.home-heading-bar {
-  width: 10%;
-  background-color: #d1fdff;
-  height: 0.2%;
-  margin-bottom: 30px;
-}
-.bgImg {
-  display: none;
-}
 
 /*************SECTION 2***************/
 
-.section2-body-cont {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  width: 100vw;
-  align-items: center;
-  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu",
-    sans-serif;
-  content: "";
-}
-.section2-body-cont .card {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 8px;
-  padding: 20px;
-  width: 50%;
-  height: 70%;
-  margin-left: auto;
-  margin-right: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-position: calc(100% - 20%) 0%;
-  text-align: center;
-}
-.card .abt-head {
-  font-size: 3.5em;
-  position: "absoulte";
-  margin-top: 2%;
-  margin-right: 50%;
-  color: white;
-}
-.paragraph {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  text-align: left;
-  margin-right: 10px;
-}
 
-@media screen and (max-width: 900px) {
-  .card .abt-head {
-    font-size: 1.5em;
-    position: "absoulte";
-    color: white;
-  }
-  .paragraph {
-    font-family: "Raleway", sans-serif;
-    font-size: 14px;
-    text-align: left;
-    margin-right: 10px;
-  }
-}
 
 /******SECTION 3*****/
-.section3-body-cont {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15%;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 20px;
-}
-.section3-body-cont h1 {
-  font-size: 44px;
-  font-weight: bold;
-  color: white;
-}
 
-.swiper-card-cont {
-  background-color: rgba(0, 0, 0, 0.2);
-  width: 90%;
-  height: 50%;
-  margin: 0 auto; /* Center the container */
-  padding: 10px;
-}
-
-.swiper {
-  width: 100%;
-  height: 90%; /* Auto height based on content */
-}
-
-.swiper-slide {
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden; /* Ensure content doesn't overflow */
-}
-
-.swiper-card {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.slide-image {
-  width: 95%;
-  height: 250px;
-  overflow: hidden;
-  max-height: 100%;
-}
-
-.slide-text {
-  margin-top: 10px;
-  font-size: 16px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-}
-
-@media screen and (max-width: 1024px) {
-  .home-body-container h1,
-  .home-body-container h2 {
-    font-size: 4rem;
-    letter-spacing: 10px;
-  }
-  .home-body-container h4 {
-    font-size: 1.5rem;
-    letter-spacing: 5px;
-  }
-  .section2-body-cont .card {
-    width: 60%;
-    height: 60%;
-  }
-  .card .abt-head {
-    font-size: 2.5em;
-  }
-  .paragraph {
-    font-size: 16px;
-  }
-  .section3-body-cont h1 {
-    font-size: 36px;
-  }
-  .swiper-card-cont {
-    width: 60%;
-    height: 50%;
-  }
-  .swiper-slide {
-    height: 60%;
-  }
-  .card .abt-head {
-    font-size: 3.5em;
-    position: "absoulte";
-    margin-top: 2%;
-    margin-right: 50%;
-    color: white;
-  }
-  .paragraph {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    text-align: left;
-    margin-right: 10px;
-  }
-  .swiper-card span {
-    font-size: 20px;
-  }
-}
 
 /* @media screen and (max-width: 600px) {
   .swiper-card-cont {
@@ -298,6 +79,10 @@
     margin-right: 0;
     gap: 2%;
   }
+  .section2-body-cont {
+    display: flex;
+    justify-content: center !important;
+  }
 
   .navbar-logo {
     width: 80px;
@@ -330,7 +115,7 @@
     font-size: 2.5em;
   }
   .abt-para-cont .paragraph {
-    font-size: 13px;
+    font-size: 16px;
   }
   .swiper-card {
     width: 100%;
@@ -356,5 +141,217 @@
     color: #333;
     text-align: center;
   }
+  .section2-body-cont .card {
+    width: 80% !important;
+  }
+}
 
+@media screen and (max-width: 425px) {
+  .home-body-container h1,
+  .home-body-container h2 {
+    font-size: 2.5rem; /* Further reduced font size */
+    letter-spacing: 3px; /* Reduced letter spacing */
+  }
+
+  .home-body-container h4 {
+    font-size: 1rem; /* Further reduced font size */
+    letter-spacing: 2px; /* Reduced letter spacing */
+  }
+
+  .home-body-container h5 {
+    font-size: 1rem; /* Reduced font size */
+  }
+
+  .home-heading-bar {
+    width: 30%;
+    height: 1px; /* Reduced height */
+    margin-bottom: 15px;
+  }
+
+  .section2-body-cont {
+    padding: 5px;
+  }
+
+  .section2-body-cont .card {
+    width: 95%; /* Increased width for smaller screens */
+    height: auto;
+    margin: 5px 0; /* Adjusted margin */
+    padding: 10px; /* Reduced padding */
+  }
+
+  .card .abt-head {
+    font-size: 1.5rem; /* Smaller font size */
+    margin: 0;
+  }
+
+  .paragraph {
+    font-size: 12px; /* Reduced font size */
+  }
+
+  .section3-body-cont {
+    padding: 5px;
+  }
+
+  .section3-body-cont h1 {
+    font-size: 20px; /* Reduced font size */
+  }
+
+  .swiper-card-cont {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  .slide-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .slide-text {
+    font-size: 12px; /* Reduced font size */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .home-body-container h1,
+  .home-body-container h2 {
+    font-size: 2rem; /* Further reduced font size */
+    letter-spacing: 2px; /* Reduced letter spacing */
+  }
+
+  .home-body-container h4 {
+    font-size: 0.9rem; /* Further reduced font size */
+    letter-spacing: 1px; /* Reduced letter spacing */
+  }
+
+  .home-body-container h5 {
+    font-size: 0.9rem; /* Reduced font size */
+  }
+
+  .home-heading-bar {
+    width: 40%; /* Adjusted width */
+    height: 1px; /* Reduced height */
+    margin-bottom: 10px;
+  }
+
+  .section2-body-cont {
+    padding: 2px;
+  }
+
+  .section2-body-cont .card {
+    width: 100%; /* Full width */
+    height: auto;
+    margin: 2px 0; /* Adjusted margin */
+    padding: 5px; /* Reduced padding */
+  }
+
+  .card .abt-head {
+    font-size: 1.2rem; /* Smaller font size */
+    margin: 0;
+  }
+
+  .paragraph {
+    font-size: 10px; /* Reduced font size */
+  }
+
+  .section3-body-cont {
+    padding: 2px;
+  }
+
+  .section3-body-cont h1 {
+    font-size: 18px; /* Further reduced font size */
+  }
+
+  .swiper-card-cont {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  .slide-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .slide-text {
+    font-size: 10px; /* Reduced font size */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home-body-container h1,
+  .home-body-container h2 {
+    font-size: 1.5rem; /* Further reduced font size */
+    letter-spacing: 1px; /* Reduced letter spacing */
+  }
+
+  .home-body-container h4 {
+    font-size: 0.8rem; /* Further reduced font size */
+    letter-spacing: 0px; /* No letter spacing */
+  }
+
+  .home-body-container h5 {
+    font-size: 0.8rem; /* Reduced font size */
+  }
+
+  .home-heading-bar {
+    width: 50%; /* Adjusted width */
+    height: 1px; /* Reduced height */
+    margin-bottom: 5px;
+  }
+
+  .section2-body-cont {
+    padding: 1px;
+  }
+
+  .section2-body-cont .card {
+    width: 100%; /* Full width */
+    height: auto;
+    margin: 1px 0; /* Adjusted margin */
+    padding: 2px; /* Reduced padding */
+  }
+
+  .card .abt-head {
+    font-size: 1rem; /* Smaller font size */
+    margin: 0;
+  }
+
+  .paragraph {
+    font-size: 8px; /* Reduced font size */
+  }
+
+  .section3-body-cont {
+    padding: 1px;
+  }
+
+  .section3-body-cont h1 {
+    font-size: 16px; /* Further reduced font size */
+  }
+
+  .swiper-card-cont {
+    width: 100%;
+    height: auto;
+    padding: 1px;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  .slide-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .slide-text {
+    font-size: 8px; /* Reduced font size */
+  }
 }

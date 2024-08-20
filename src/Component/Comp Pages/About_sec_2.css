@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.about-section2-body-cont {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+    url("../../Component/Images/section2-bg-img.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.about-custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.col {
+  flex: 1;
+  max-width: 45%;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-card {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-card h1 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.about-card p {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-card h1 {
+    font-size: 20px;
+    letter-spacing: 8px;
+  }
+
+  .about-card p {
+    font-size: 14px;
+  }
+
+  .col {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-section2-body-cont {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .about-card {
+    padding: 15px;
+  }
+
+  .about-card h1 {
+    font-size: 18px;
+    letter-spacing: 6px;
+  }
+
+  .about-card p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-card h1 {
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+
+  .about-card p {
+    font-size: 12px;
+  }
+}

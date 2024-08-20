@@ -1,22 +1,15 @@
 import React from "react";
 import NavBar from "../../Component/NavBar";
 import BottomBar from "../../Component/BottomBar";
-import familyImg from '../../Component/Images/family_events.jpg';
-import './Family.css'
+import familyImg from "../../Component/Images/family_events.jpg";
+import "./Family.css";
 export default function Family_Events() {
   return (
     <>
-      <NavBar />
-
-
       <section className="family-body-cont">
-      <h1 className="family-heading">FAMILY EVENTS</h1>
+        <h1 className="family-heading">FAMILY EVENTS</h1>
 
-        <img
-          className="family-img"
-          src={familyImg}
-          alt={"Family img"}
-        />
+        <img className="family-img" src={familyImg} alt={"Family img"} />
         <div>
           <p>
             Hrudaya Corporate Event Planners and one of the Best Event
@@ -31,9 +24,9 @@ export default function Family_Events() {
           </p>
           <p>
             Be it conferences, meetings, seminars, workshops, or awards, your
-            Family event speaks a lot about your credibility in the market as
-            a company serious about having the perfect evening. Let us at We &
-            You take care of your Family event management needs.
+            Family event speaks a lot about your credibility in the market as a
+            company serious about having the perfect evening. Let us at We & You
+            take care of your Family event management needs.
           </p>
         </div>
       </section>
@@ -53,7 +46,6 @@ export default function Family_Events() {
                 <li>Cocktail Party</li>
                 <li>Naming Ceremonies</li>
                 <li>Theme Party</li>
-
               </ul>
             </div>
           </div>

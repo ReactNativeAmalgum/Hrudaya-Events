@@ -6,7 +6,6 @@ import "./Events.css";
 export default function Events() {
   return (
     <>
-      <NavBar />
       <div className="heading-cont">
         <h1>OUR EVENTS</h1>
         <h3>Provide Everything You Need</h3>
