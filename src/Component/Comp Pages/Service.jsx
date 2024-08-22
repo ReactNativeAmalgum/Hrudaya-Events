@@ -1,14 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import catering from "../../Component/Images/catering.jpg";
-import decoration from "../../Component/Images/decoration.jpg";
-import venue from "../../Component/Images/venue.jpg";
-import video from "../../Component/Images/photography.jpg";
-import celebrity from "../../Component/Images/celebrity.jpg";
-import sangeet from "../../Component/Images/sangeet.jpg";
-import live_band from "../../Component/Images/live_band.jpg";
-import theme_deco from "../../Component/Images/theme.jpg";
-import make_up from "../../Component/Images/mehndi.jpeg";
 // Import Swiper styles
 import "./Service.css";
 import { FreeMode, Pagination } from "swiper/modules";
@@ -84,7 +75,6 @@ export default function Service() {
                       <div className="swiper-img-cont">
                         <img src={s.img[0]} />
                         <p>{s.title}</p>
-
                       </div>
                     </div>
                   </SwiperSlide>
