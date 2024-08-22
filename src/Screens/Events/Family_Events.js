@@ -3,6 +3,7 @@ import NavBar from "../../Component/NavBar";
 import BottomBar from "../../Component/BottomBar";
 import familyImg from "../../Component/Images/family_events.jpg";
 import "./Family.css";
+import { EventData2 } from "../../Constant/EventData";
 export default function Family_Events() {
   return (
     <>
@@ -10,24 +11,12 @@ export default function Family_Events() {
         <h1 className="family-heading">FAMILY EVENTS</h1>
 
         <img className="family-img" src={familyImg} alt={"Family img"} />
-        <div>
-          <p>
-            Hrudaya Corporate Event Planners and one of the Best Event
-            Management Company with our services available. Our forte lies in
-            delivering cutting edge, innovative and professional event
-            management services. We are a bunch of fun loving, energetic and
-            passionate people working towards the common goal of providing
-            exceptional services. From inspirational ideas to stunning
-            productions, strong themes and creative programs, we do everything
-            to create memorable experiences and branding opportunities that
-            exceed customer expectations.
-          </p>
-          <p>
-            Be it conferences, meetings, seminars, workshops, or awards, your
-            Family event speaks a lot about your credibility in the market as a
-            company serious about having the perfect evening. Let us at We & You
-            take care of your Family event management needs.
-          </p>
+        <div className="title-descp-cont">
+        {EventData2.map((s, i) =>(
+          <div  key={i}>
+          <p style={{textAlign:"left"}}>{s.para}</p>
+          </div>
+        ))}
         </div>
       </section>
       <section className="card-family-body-cont">

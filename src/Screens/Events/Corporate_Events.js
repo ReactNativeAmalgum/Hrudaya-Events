@@ -2,38 +2,26 @@ import React from "react";
 import NavBar from "../../Component/NavBar";
 import BottomBar from "../../Component/BottomBar";
 import "./Corporate.css";
+import { EventData } from "../../Constant/EventData";
 
 export default function Corporate_Events() {
   return (
     <>
-
       <section className="corporate-body-cont">
-      <h1 className="corp-heading">CORPORATE EVENTS</h1>
+        <h1 className="corp-heading">CORPORATE EVENTS</h1>
 
         <img
           className="corp-img"
           src="https://static.wixstatic.com/media/11062b_38f7e95dd64a4de1ba0b2583a56f651c~mv2.jpg/v1/fill/w_1225,h_816,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Startup.jpg"
           alt={"corporate img"}
         />
-
-          <p>
-            Hrudaya Corporate Event Planners and one of the Best Event
-            Management Company with our services available. Our forte lies in
-            delivering cutting edge, innovative and professional event
-            management services. We are a bunch of fun loving, energetic and
-            passionate people working towards the common goal of providing
-            exceptional services. From inspirational ideas to stunning
-            productions, strong themes and creative programs, we do everything
-            to create memorable experiences and branding opportunities that
-            exceed customer expectations.
-          </p>
-          <p>
-            Be it conferences, meetings, seminars, workshops, or awards, your
-            corporate event speaks a lot about your credibility in the market as
-            a company serious about having the perfect evening. Let us at We &
-            You take care of your corporate event management needs.
-          </p>
-
+<div className="title-descp-cont">
+        {EventData.map((s, i) =>(
+          <div  key={i}>
+          <p style={{textAlign:"left"}}>{s.para}</p>
+          </div>
+        ))}
+        </div>
       </section>
       <section className="card-corporate-body-cont">
         <div className="corp-card-cont">

@@ -27,7 +27,7 @@ export default function Service() {
   console.log(serviceF)
   return (
     <>
-      <Service_sec_1 />
+      <Service_sec_1 service={serviceF} />
       <Secrvice_sec_2 service={serviceF} />
 
       <BottomBar />

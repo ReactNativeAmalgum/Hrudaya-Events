@@ -36,8 +36,33 @@ function Secrvice_sec_2({ service }) {
                     service.title.slice(1).toLowerCase()}
                 </h5>
               </div>
-              <p style={{ paddingBottom: 10 }}>{service.description1}</p>
-              {showMore && <p>{service.description2}</p>}
+              <p style={{ paddingBottom: 10 }}>{service.para1}</p>
+
+              <p style={{ paddingBottom: 10 }}>{service.para2}</p>
+              <p style={{ paddingBottom: 10 }}>{service.para3}</p>
+              <p >{service.para3a}</p>
+              <p >{service.para3b}</p>
+              <p >{service.para3c}</p>
+              <p >{service.para3d}</p>
+              <p >{service.para3e}</p>
+
+              <p style={{ paddingBottom: 10 }}>{service.para4}</p>
+
+              {showMore && (
+                <>
+                  <p style={{ paddingBottom: 10 }}>{service.para5}</p>
+                  <p style={{ paddingBottom: 10 }}>{service.para6}</p>
+                  <p style={{ paddingBottom: 10 }}>{service.para7}</p>
+                  <p style={{ paddingBottom: 10 }}>{service.para8}</p>
+                  <p style={{ paddingBottom: 10 }}>{service.para9}</p>
+                  <p style={{ paddingBottom: 10 }}>{service.para10}</p>
+                  <p style={{ paddingBottom: 10 }}>{service.para11}</p>
+                  <p style={{ paddingBottom: 10 }}>{service.para12}</p>
+                  <p style={{ paddingBottom: 10 }}>{service.para13}</p>
+                  <p style={{ paddingBottom: 10 }}>{service.para14}</p>
+                  <p style={{ paddingBottom: 10 }}>{service.para15}</p>
+                </>
+              )}
               <touchableHilight
                 className={"NewAboutUs-ReadMore"}
                 onClick={toggleShowMore}
@@ -107,7 +132,11 @@ function Secrvice_sec_2({ service }) {
                       <li className="widget-list__item" key={i}>
                         <Link
                           to={`/service/${s.id}`} // Fallback for empty slugs
-                          className={`widget-list__link text-primary_h ${location.pathname === `/service/${s.id}` ? 'active' : ''}`}
+                          className={`widget-list__link text-primary_h ${
+                            location.pathname === `/service/${s.id}`
+                              ? "active"
+                              : ""
+                          }`}
                           onClick={() => window.scrollTo(0, 0)}
                         >
                           <span>
