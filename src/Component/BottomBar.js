@@ -24,7 +24,7 @@ function BottomBar() {
                 <div className="col mb-8 bottom-link">
                   <div className="footer-widget footer-list">
                     <h3 className="footer-title">Useful Link</h3>
-                    <ul>
+                    <ul onClick={() => window.scrollTo(0, 0)}>
                       <li>
                         <Link to="/">Home</Link>
                       </li>

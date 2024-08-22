@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css/free-mode";
@@ -7,9 +7,17 @@ import "swiper/css/pagination";
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
 import "./Service_sec_2_.css";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams, useLocation } from "react-router-dom";
 import { ServiceData } from "../../Constant/ServiceData";
+
 function Secrvice_sec_2({ service }) {
+  const [showMore, setShowMore] = useState(false);
+
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+  };
+  const location = useLocation();
+
   const navigation = useNavigate();
   return (
     <section className="service_section_container">
@@ -28,7 +36,14 @@ function Secrvice_sec_2({ service }) {
                     service.title.slice(1).toLowerCase()}
                 </h5>
               </div>
-              <p>{service.description}</p>
+              <p style={{ paddingBottom: 10 }}>{service.description1}</p>
+              {showMore && <p>{service.description2}</p>}
+              <touchableHilight
+                className={"NewAboutUs-ReadMore"}
+                onClick={toggleShowMore}
+              >
+                {showMore ? "read less" : "...read more"}
+              </touchableHilight>
             </div>
 
             <div style={{ marginTop: 30 }} className="bar_heading_cont">
@@ -92,10 +107,13 @@ function Secrvice_sec_2({ service }) {
                       <li className="widget-list__item" key={i}>
                         <Link
                           to={`/service/${s.id}`} // Fallback for empty slugs
-                          className="widget-list__link text-primary_h"
+                          className={`widget-list__link text-primary_h ${location.pathname === `/service/${s.id}` ? 'active' : ''}`}
+                          onClick={() => window.scrollTo(0, 0)}
                         >
-                          <span>{s.title.charAt(0).toUpperCase() +
-                            s.title.slice(1).toLowerCase()}</span>
+                          <span>
+                            {s.title.charAt(0).toUpperCase() +
+                              s.title.slice(1).toLowerCase()}
+                          </span>
                         </Link>
                       </li>
                     ))}
