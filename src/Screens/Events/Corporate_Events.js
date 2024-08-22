@@ -15,12 +15,21 @@ export default function Corporate_Events() {
           src="https://static.wixstatic.com/media/11062b_38f7e95dd64a4de1ba0b2583a56f651c~mv2.jpg/v1/fill/w_1225,h_816,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Startup.jpg"
           alt={"corporate img"}
         />
-<div className="title-descp-cont">
-        {EventData.map((s, i) =>(
-          <div  key={i}>
-          <p style={{textAlign:"left"}}>{s.para}</p>
-          </div>
-        ))}
+        <div className="title-descp-cont">
+          {EventData.map((s, i) => (
+            <div key={i}>
+              <p
+                style={{
+                  textAlign: "left",
+                  marginBottom: i !== 1 && i !== 3 && i !== 9 && i !== 16 && i !== 22 ? 40 : 10,
+                  textDecoration: i === 1 || i === 3 || i === 9 || i === 16 || i ===22 ? "underline" : "none", // Underline for 3rd, 11th, and 16th
+                  textUnderlineOffset: 4,
+                }}
+              >
+                {s.para}
+              </p>{" "}
+            </div>
+          ))}
         </div>
       </section>
       <section className="card-corporate-body-cont">
