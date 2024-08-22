@@ -264,6 +264,9 @@ h5 {
   font-weight: 500;
 }
 
+.widget-list__link.active{
+  font-weight: 500;
+}
 /* Medium Devices (Desktops, 1024px and below) */
 @media (max-width: 1024px) {
   .service_section_container {

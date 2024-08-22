@@ -223,7 +223,7 @@
   }
 
   .corp-card-cont {
-    width: 60%;
+    width: 100%;
     height: auto;
     flex-direction: column;
     border-radius: 6%;

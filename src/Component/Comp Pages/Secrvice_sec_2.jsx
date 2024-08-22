@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
 import "./Service_sec_2_.css";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams, useLocation } from "react-router-dom";
 import { ServiceData } from "../../Constant/ServiceData";
 
 function Secrvice_sec_2({ service }) {
@@ -16,6 +16,7 @@ function Secrvice_sec_2({ service }) {
   const toggleShowMore = () => {
     setShowMore(!showMore);
   };
+  const location = useLocation();
 
   const navigation = useNavigate();
   return (
@@ -106,7 +107,8 @@ function Secrvice_sec_2({ service }) {
                       <li className="widget-list__item" key={i}>
                         <Link
                           to={`/service/${s.id}`} // Fallback for empty slugs
-                          className="widget-list__link text-primary_h"
+                          className={`widget-list__link text-primary_h ${location.pathname === `/service/${s.id}` ? 'active' : ''}`}
+                          onClick={() => window.scrollTo(0, 0)}
                         >
                           <span>
                             {s.title.charAt(0).toUpperCase() +

@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -6,11 +7,27 @@ import logo from "./Images/logo.jpg";
 import "./NavBar.css";
 import { Link, useLocation } from "react-router-dom";
 import { ServiceData } from "../Constant/ServiceData";
+
 function NavBar() {
   const location = useLocation();
+  const [expanded, setExpanded] = useState(false);
+
+  const handleToggle = () => {
+    setExpanded(!expanded);
+  };
+
+  const closeNavbar = () => {
+    setExpanded(false);
+  };
 
   return (
-    <Navbar expand="lg" bg="dark" className="custom-header">
+    <Navbar
+      expand="lg"
+      bg="dark"
+      className="custom-header"
+      expanded={expanded}
+      onToggle={handleToggle}
+    >
       <Container>
         <Navbar.Brand href="#home">
           <img
@@ -25,6 +42,7 @@ function NavBar() {
             <Nav.Link
               className={location.pathname === "/" ? "link active" : "link"}
               href="/"
+              onClick={closeNavbar}
             >
               Home
             </Nav.Link>
@@ -34,6 +52,7 @@ function NavBar() {
                 location.pathname === "/about-us" ? "link active" : "link"
               }
               href="/about-us"
+              onClick={closeNavbar}
             >
               About
             </Nav.Link>
@@ -42,6 +61,7 @@ function NavBar() {
                 location.pathname === "/contact" ? "link active" : "link"
               }
               href="/contact"
+              onClick={closeNavbar}
             >
               Contact
             </Nav.Link>
@@ -54,6 +74,7 @@ function NavBar() {
                       ? "link active"
                       : "link"
                   }
+                  onClick={closeNavbar}
                 >
                   <Link className="linkdeco" to={`/service/${s.id}`}>
                     {s.title.charAt(0).toUpperCase() +
@@ -66,7 +87,6 @@ function NavBar() {
             <NavDropdown
               title="Events"
               id="basic-nav-dropdown"
-              href="/events"
               className={
                 location.pathname === "/events" ? "link active" : "link"
               }
@@ -78,6 +98,7 @@ function NavBar() {
                     : "link"
                 }
                 href="/events/family"
+                onClick={closeNavbar}
               >
                 Family
               </NavDropdown.Item>
@@ -88,6 +109,7 @@ function NavBar() {
                     : "link"
                 }
                 href="/events/corporate"
+                onClick={closeNavbar}
               >
                 Corporate
               </NavDropdown.Item>
