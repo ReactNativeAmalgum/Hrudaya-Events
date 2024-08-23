@@ -96,14 +96,14 @@ function BottomBar() {
             <div className="container">
               <div className="copyright text-center">
                 <p>
-                  Copyright ©2024 All rights reserved | HNY Interiors{" "}
+                  Copyright ©2024 All rights reserved | Hrundaya Events{" "}
                   <i className="fa fa-heart" /> by{" "}
                   <Link
                     className="skdm"
                     to="https://skdm.in/contact-us-digital-marketing"
                   >
                     {" "}
-                    shree krishns digital marketing{" "}
+                    shree krishna digital marketing{" "}
                   </Link>
                   .
                 </p>
