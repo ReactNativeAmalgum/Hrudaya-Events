@@ -113,6 +113,17 @@ function NavBar() {
               >
                 Corporate
               </NavDropdown.Item>
+              <NavDropdown.Item
+                className={
+                  location.pathname === "/events/destination"
+                    ? "link active"
+                    : "link"
+                }
+                href="/events/destination"
+                onClick={closeNavbar}
+              >
+                Destination Weddings
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

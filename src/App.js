@@ -9,6 +9,7 @@ import Corporate_Events from "./Screens/Events/Corporate_Events";
 import Family_Events from "./Screens/Events/Family_Events";
 import Events from "./Screens/Events/Events";
 import NavBar from "./Component/NavBar";
+import Destination from "./Screens/Events/Desitnation";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/events/family" element={<Family_Events />} />
           <Route path="/events/corporate" element={<Corporate_Events />} />
+          <Route path="/events/destination" element={<Destination />} />
         </Routes>
       </div>
     </Router>
