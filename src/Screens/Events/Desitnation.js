@@ -8,7 +8,7 @@ export default function Destination() {
   return (
     <>
       <section className="corporate-body-cont">
-        <h1 className="corp-heading">Destination Weedings</h1>
+        <h1 className="corp-heading">Destination Weddings</h1>
 
         <img
           className="corp-img"
