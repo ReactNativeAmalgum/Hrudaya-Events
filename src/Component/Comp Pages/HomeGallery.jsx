@@ -10,9 +10,7 @@ import { Image } from "antd";
 export default function HomeGallery() {
   return (
     <section className="gallery-section-cont">
-    <h2>
-        Gallery
-    </h2>
+      <h2>Gallery</h2>
       <section className="container">
         <div className="row gallery-custom-row">
           <div className="col-md-4">

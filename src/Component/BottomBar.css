@@ -38,10 +38,13 @@
   }
   
   .footer-title {
+    font-family: "Calistoga", serif;
+
     color: gold !important;
   }
   
   .footer-title ul li {
+
     color: white !important;
   }
   
@@ -50,10 +53,14 @@
   }
   
   .desc {
+    font-family: "sergio", serif !important;
+
     color: #ffffff !important;
   }
   
   a {
+    font-family: "sergio", serif !important;
+
     color: white !important;
     text-decoration: underline;
   }
@@ -92,6 +99,10 @@
     padding: 0px;
   }
   
+  .soical-ul i {
+    font-size: 20px; /* Increase the size of the icons */
+    font-weight: 500;
+  }
 
   /* Responsive styles */
   
@@ -150,6 +161,9 @@
     .soical-ul {
       flex-direction: row;
       align-items: center;
+    }
+    .soical-ul i {
+      font-size: 20px; /* Slightly smaller size for mobile */
     }
   
     .facebook {

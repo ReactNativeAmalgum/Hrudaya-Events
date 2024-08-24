@@ -43,8 +43,11 @@
   object-fit: cover;
 }
 
+.service-left-card h2{
+  font-family: "EB Garamond", serif;
+}
 .service-left-card p{
-  font-family: "Didot eText W01 Italic", serif;
+  font-family: "sergio", serif;
   padding-left: 5%;
 
 }
@@ -76,6 +79,8 @@
   border-radius: 5px; 
   font-size: 1rem;
   text-align: center; 
+  font-family: "EB Garamond", serif !important;
+
 }
 
 

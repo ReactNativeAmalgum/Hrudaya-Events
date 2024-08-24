@@ -45,6 +45,9 @@ function NavBar() {
               onClick={closeNavbar}
             >
               Home
+              {location.pathname === "/" && (
+                <div className="underline mx-auto" />
+              )}
             </Nav.Link>
 
             <Nav.Link
@@ -55,17 +58,42 @@ function NavBar() {
               onClick={closeNavbar}
             >
               About
+              {location.pathname === "/about-us" && (
+                <div className="underline mx-auto" />
+              )}
             </Nav.Link>
             <Nav.Link
               className={
-                location.pathname === "/contact" ? "link active" : "link"
+                location.pathname === "/gallery" ? "link active" : "link"
               }
-              href="/contact"
+              href="/gallery"
               onClick={closeNavbar}
             >
-              Contact
+              Gallery
+              {location.pathname === "/gallery" && (
+                <div className="underline mx-auto" />
+              )}
             </Nav.Link>
-            <NavDropdown title="Services" id="basic-nav-dropdown">
+
+            <NavDropdown
+              title={
+                <span
+                  className={
+                    location.pathname.startsWith("/service")
+                      ? "link active "
+                      : "link"
+                  }
+                >
+                  Services
+                </span>
+              }
+              className={
+                location.pathname.startsWith("/service")
+                  ? "link active"
+                  : "link"
+              }
+              id="basic-nav-dropdown"
+            >
               {ServiceData.map((s, i) => (
                 <NavDropdown.Item
                   key={i}
@@ -93,6 +121,17 @@ function NavBar() {
             >
               <NavDropdown.Item
                 className={
+                  location.pathname === "/events/destination"
+                    ? "link active"
+                    : "link"
+                }
+                href="/events/destination"
+                onClick={closeNavbar}
+              >
+                Destination Weddings
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                className={
                   location.pathname === "/events/family"
                     ? "link active"
                     : "link"
@@ -113,18 +152,19 @@ function NavBar() {
               >
                 Corporate
               </NavDropdown.Item>
-              <NavDropdown.Item
-                className={
-                  location.pathname === "/events/destination"
-                    ? "link active"
-                    : "link"
-                }
-                href="/events/destination"
-                onClick={closeNavbar}
-              >
-                Destination Weddings
-              </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link
+              className={
+                location.pathname === "/contact" ? "link active" : "link"
+              }
+              href="/contact"
+              onClick={closeNavbar}
+            >
+              Contact
+              {location.pathname === "/contact" && (
+                <div className="underline mx-auto" />
+              )}
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

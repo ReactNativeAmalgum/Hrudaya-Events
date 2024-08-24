@@ -121,7 +121,7 @@ Don't let venue hunting become a headache. Contact us today to schedule a consul
 
   {
     id: 4,
-    title: "PHOTO & VIDEO (GRAPHY)",
+    title: "PHOTO & VIDEO GRAPHY",
     slug: "/photo-video",
     para1: `Event Photography and Videography in Navi Mumbai`,
     para2: `
@@ -351,7 +351,7 @@ Theme Decoration in Navi Mumbai
   },
   {
     id: 9,
-    title: "MAKE & MEHNDI (ARTIST)",
+    title: "MAKE & MEHNDI ARTIST",
     slug: "/make-mehndi",
     para1: `Makeup & Mehndi Artist Selection Service`,
     para2: `Are you planning a special event and looking for a talented makeup and mehndi artist to enhance your look? Look no further! Our makeup and mehndi artist selection service in Navi Mumbai is designed to help you find the perfect artist to bring your vision to life.`,

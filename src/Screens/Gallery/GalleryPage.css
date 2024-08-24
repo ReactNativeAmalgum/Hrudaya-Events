@@ -1,0 +1,74 @@
+/* Container for the gallery page section */
+.gallerypage-section-cont {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Container for the paragraph */
+  .gallery-card-body {
+    font-family: "EB Garamond", serif;
+    color: white;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .gallery-card-body p{
+    color: black;
+    font-family: "Sergio", sans-serif;
+
+  }
+  
+  /* Responsive grid layout for images */
+  .col-md-4 {
+    flex: 1 1 30%;
+    max-width: 100%;
+  }
+  
+  /* Styling for image container */
+  .gallerypage-image-container {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Ensure images are responsive and fit within the container */
+  .gallerypage-img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Row layout for images */
+  .gallerypage-custom-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust gap between images */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .gallerypage-custom-row {
+      flex-direction: column !important;
+      align-items: center; /* Center the images within the column */
+    }
+  
+    .col-md-4 {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .gallery-card-body {
+      font-size: 1rem;
+      padding: 15px;
+      line-height: 1.5;
+    }
+  }
+  

@@ -26,13 +26,15 @@
   font-size: 2.5rem; /* Default font size */
   color: white;
   margin-bottom: 20px;
+  font-family: "EB Garamond", serif;
+
 }
 
 .card-text {
-  font-size: 1.125rem; /* Default font size for text */
+  font-size: 1.125rem; 
   color: white;
-  text-align: justify;
-  /* font-family: "Didot eText W01 Italic" !important; */
+  text-align:unset;
+  font-family: " Segoe UI" !important;
 }
 
 .card-body{

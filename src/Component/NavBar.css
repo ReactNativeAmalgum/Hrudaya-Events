@@ -11,6 +11,7 @@
 
 .navbar-nav .nav-link {
   color: white !important; /* Force the link color to white */
+  font-family: "Calistoga", serif;
 }
 
 .link {
@@ -60,6 +61,12 @@
 .dropdown-item.active,
 .dropdown-item:active {
   background-color: none !important;
+}
+
+.underline {
+  height: 2px;
+  background-color: #f76c2f;
+  margin-top: 5px;
 }
 
 

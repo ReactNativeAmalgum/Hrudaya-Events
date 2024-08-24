@@ -22,7 +22,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  flex-direction: row;
 }
 
 .col {
@@ -44,7 +44,7 @@
 
 .about-card h1 {
   color: white;
-  font-family: "Raleway", sans-serif;
+  font-family: "EB Garamond", serif !important;
   font-size: 28px;
   letter-spacing: 10px;
   margin-bottom: 10px;
@@ -53,13 +53,13 @@
 
 .about-card p {
   color: white;
-  font-family: "Raleway", sans-serif;
+  font-family: "Sergio", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .about-card h1 {
     font-size: 20px;
     letter-spacing: 8px;
@@ -69,9 +69,12 @@
     font-size: 14px;
   }
 
-  .col {
-    max-width: 100%;
-    padding: 0 10px;
+
+  .about-col-left-cont {
+    display: contents;
+  }
+  .image-container {
+    height: 90%;
   }
 }
 
@@ -92,6 +95,12 @@
 
   .about-card p {
     font-size: 14px;
+  }
+  .about-custom-row {
+    flex-direction: column;
+  }
+  .about-col-left-cont {
+    display: contents;
   }
 }
 

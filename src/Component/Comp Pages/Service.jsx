@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "./Service.css";
-import { FreeMode, Pagination } from "swiper/modules";
+import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import { ServiceData } from "../../Constant/ServiceData";
 import { Link } from "react-router-dom";
 export default function Service() {
@@ -17,9 +17,22 @@ export default function Service() {
         <div className="row custom-row">
           <div className="col-4 custom-col">
             <div className="service-left-card">
-              <h2>Our services</h2>
+              <h2 >Our services</h2>
               <p>
-              Our services extend beyond the ordinary. We offer a comprehensive range of solutions to ensure your event is a resounding success. From delectable catering options that tantalize the taste buds to stunning decorations that create a captivating ambiance, we have everything covered. Need help finding the perfect venue? Our team will assist you in selecting a space that aligns with your vision. To capture the memories of your event, our professional photography and videography services will immortalize every precious moment. If you're dreaming of a celebrity appearance, our celebrity management services can make it a reality. And that's just the beginning! Discover the endless possibilities with our diverse range of services.              </p>
+                Our services extend beyond the ordinary. We offer a
+                comprehensive range of solutions to ensure your event is a
+                resounding success. From delectable catering options that
+                tantalize the taste buds to stunning decorations that create a
+                captivating ambiance, we have everything covered. Need help
+                finding the perfect venue? Our team will assist you in selecting
+                a space that aligns with your vision. To capture the memories of
+                your event, our professional photography and videography
+                services will immortalize every precious moment. If you're
+                dreaming of a celebrity appearance, our celebrity management
+                services can make it a reality. And that's just the beginning!
+                Discover the endless possibilities with our diverse
+                range of services.{" "}
+              </p>
             </div>
           </div>
           <div className="col-8 custom-col-right">
@@ -31,17 +44,15 @@ export default function Service() {
                 pagination={{
                   clickable: true,
                 }}
-                modules={[FreeMode, Pagination]}
+                modules={[FreeMode, Pagination, Autoplay]}
                 className="mySwiper"
-                speed={3000}
                 autoplay={{
-                  delay: 7000, // Delay between transitions (3 seconds)
-                  disableOnInteraction: false, // Continue autoplay after user interactions
+                  delay: 1000,
+                  disableOnInteraction: false,
                 }}
                 breakpoints={{
-                  320:{
+                  320: {
                     slidesPerView: 1,
-
                   },
                   640: {
                     slidesPerView: 2,
@@ -67,15 +78,16 @@ export default function Service() {
               >
                 {ServiceData.map((s, i) => (
                   <SwiperSlide key={i}>
-                  <Link to={`/service/${s.id}`}
-                  onClick={() => window.scrollTo(0, 0)}
-                  >
-                    <div className="swiper-cont">
-                      <div className="swiper-img-cont">
-                        <img src={s.img[0]} />
-                        <p>{s.title}</p>
+                    <Link
+                      to={`/service/${s.id}`}
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      <div className="swiper-cont">
+                        <div className="swiper-img-cont">
+                          <img src={s.img[0]} />
+                          <p>{s.title}</p>
+                        </div>
                       </div>
-                    </div>
                     </Link>
                   </SwiperSlide>
                 ))}

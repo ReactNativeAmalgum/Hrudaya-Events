@@ -8,8 +8,8 @@
   /* background-image: url('../../Component/Images//about-event.jpg'); */
   background-size: cover;
   background-position: center;
-  color: #fff; /* Adjust based on your design */
-  background-color: black;
+  color: #020202; /* Adjust based on your design */
+  /* background-color: black; */
 }
 
 .about-content {
@@ -18,8 +18,8 @@
 }
 
 .about-content h1 {
-  font-family: 'CustomFont', sans-serif;
-  font-size: 48px;
+  font-family: "EB Garamond", serif !important;
+  /* font-size: 48px; */
   letter-spacing: 5px;
   margin: 0;
   line-height: 1;
@@ -53,10 +53,15 @@
   background-color: black !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
+.about-col-left-cont{
+  display: inline-flex;
+}
 .image-container {
   position: relative;
 
+}
+.image-container img{
+  height: 100% !important;
 }
 
 .image-container::before {
@@ -77,6 +82,11 @@
   object-fit: cover;
 }
 
+.about-custom-cont{
+  display: contents;
+  height: 100% !important;
+}
+
 .about-content {
   position: absolute;
   top: 50%;
@@ -92,7 +102,7 @@
 
 .about-content h1 {
   font-family: 'CustomFont', sans-serif; /* Replace with your custom font */
-  font-size: 48px;
+  /* font-size: 48px; */
   margin: 0;
   line-height: 1;
   letter-spacing: 4px;
@@ -103,7 +113,19 @@
 .card p{
   text-align: center;
 }
+/*
+.about-special-col{
+  display: contents !important;
+}
+.about-custom-col{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: aqua;
+  justify-content: center;
 
+}
+*/
 @media (max-width: 1024px) {
   .card {
     position: relative;
@@ -118,7 +140,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   .para-cont {
-    max-width: 600px;
+    /* max-width: 600px; */
     text-align: justify;
     padding-top: 5%;
     padding-bottom: 5%;

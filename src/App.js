@@ -10,6 +10,7 @@ import Family_Events from "./Screens/Events/Family_Events";
 import Events from "./Screens/Events/Events";
 import NavBar from "./Component/NavBar";
 import Destination from "./Screens/Events/Desitnation";
+import GalleryPage from "./Screens/Gallery/GalleryPage";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/service/:id" element={<Service />} />
+          <Route path ='/gallery' element={<GalleryPage />} />
           <Route path="/events" element={<Events />} />
           <Route path="/events/family" element={<Family_Events />} />
           <Route path="/events/corporate" element={<Corporate_Events />} />

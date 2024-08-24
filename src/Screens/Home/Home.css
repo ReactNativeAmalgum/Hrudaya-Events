@@ -136,7 +136,7 @@
   .slide-content.slide-text {
     margin-top: 10px;
     font-size: 12px;
-    font-family: "Courier New", Courier, monospace;
+    /* font-family: "Courier New", Courier, monospace; */
     font-weight: bold;
     color: #333;
     text-align: center;
