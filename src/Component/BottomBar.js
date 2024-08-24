@@ -1,7 +1,7 @@
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
-import logo from "./Images/logo.jpg";
+import logo from "./Images/logo.png";
 import { Link } from "react-router-dom";
 import "./BottomBar.css";
 function BottomBar() {
