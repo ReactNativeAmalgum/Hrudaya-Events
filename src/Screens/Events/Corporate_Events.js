@@ -10,7 +10,7 @@ export default function Corporate_Events() {
     <>
       <section
         style={{
-          backgroundImage: `url('https://img.freepik.com/free-photo/business-partners-handshake-international-business-concept_53876-104046.jpg?t=st=1724475983~exp=1724479583~hmac=4924b4fbafee119ee2097610997f70d8a817b25f7a8e5b84a12c8e5544716128&w=1060')`,
+          backgroundImage: `url('https://img.freepik.com/free-photo/wedding-table-arrangement-outdoors_23-2149617132.jpg?t=st=1724482924~exp=1724486524~hmac=12d2a1172999851d11d64fbebb6c16a6bd6ab55535d16dddd6917b81c945242f&w=1060')`,
         }}
         className="section1_service_banner"
       >
@@ -25,7 +25,7 @@ export default function Corporate_Events() {
             <div className="col-6 about-special-col corp-section2-col-left-cont">
               <div className="corp-image-container">
                 <img
-                  src="https://img.freepik.com/free-photo/creative-people-working-office_23-2147656715.jpg?ga=GA1.1.1082127529.1721367194&semt=ais_hybrid"
+                  src="https://img.freepik.com/free-photo/female-wedding-planner-working-ceremony_23-2150167261.jpg?t=st=1724482840~exp=1724486440~hmac=87d06fc93511a68208266327d0a7d66f532398fa6624c6b3e5f1d23888188d31&w=1060"
                   alt="Story Image"
                   className="card-image"
                 />
