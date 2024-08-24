@@ -8,9 +8,12 @@ export default function Corporate_Events() {
   const data = EventData.map((a, s) => <p>{a.para}</p>);
   return (
     <>
-      <section   style={{
-    backgroundImage: `url('https://img.freepik.com/free-photo/business-partners-handshake-international-business-concept_53876-104046.jpg?t=st=1724475983~exp=1724479583~hmac=4924b4fbafee119ee2097610997f70d8a817b25f7a8e5b84a12c8e5544716128&w=1060')`,
-  }} className="section1_service_banner">
+      <section
+        style={{
+          backgroundImage: `url('https://img.freepik.com/free-photo/business-partners-handshake-international-business-concept_53876-104046.jpg?t=st=1724475983~exp=1724479583~hmac=4924b4fbafee119ee2097610997f70d8a817b25f7a8e5b84a12c8e5544716128&w=1060')`,
+        }}
+        className="section1_service_banner"
+      >
         <div className="serve_sec_bar_cont">
           <div className="service_sec_1_bar" />
           <h1>Corporate Events</h1>
@@ -61,7 +64,7 @@ export default function Corporate_Events() {
         <div className="corp-img-cont">
           <img
             className="corp-img"
-            src="https://img.freepik.com/free-photo/staff-meeting-group-young-modern-people-smart-casual-wear-discussing-something-while-working-creative-office-business-time_496169-1626.jpg?t=st=1724474619~exp=1724478219~hmac=36b62288f2f306bd39c02f8274d609d17740521db1f5f06009b5e3a2d4454bc2&w=1060"
+            src="https://img.freepik.com/free-photo/decorated-banquet-hall-with-flowers_8353-10058.jpg?t=st=1724482721~exp=1724486321~hmac=fcb827c32cf75fefc324140549f1060eade0fc8e5c6b565342c0052ca3489be3&w=1060"
             alt={"family img"}
           />
         </div>
@@ -88,7 +91,7 @@ export default function Corporate_Events() {
               <div class="order-1 order-md-2 corp-custom-col corp-right-col col-6">
                 <div className="choose-cont">
                   <img
-                    src="https://img.freepik.com/free-photo/medium-shot-people-working-desk_23-2149300648.jpg?t=st=1724474649~exp=1724478249~hmac=5696141d7b67b1cb004ee113a27162ab7ff64ca4406e4baf772ea73b506e75c3&w=1060"
+                    src="https://img.freepik.com/free-photo/colleagues-having-fun-business-event_23-2149370528.jpg?t=st=1724482679~exp=1724486279~hmac=107281657b387828e8c5e90e97ac27557041be981eda96d3b4ba30637f9aa3f6&w=1060"
                     alt="Description of image"
                   />
                 </div>
@@ -115,7 +118,7 @@ export default function Corporate_Events() {
               <div class="corp-custom-col corp-right-col col-6">
                 <div className="choose-cont">
                   <img
-                    src="https://img.freepik.com/free-photo/people-with-laptops-office_23-2147656717.jpg?t=st=1724474287~exp=1724477887~hmac=f838415c2700bb3e7677d6d628bd67103fba6849a08b93a10430d59617c65445&w=1060"
+                    src="https://img.freepik.com/free-photo/new-year-spend-with-friends-celebrating_23-2149196985.jpg?t=st=1724482604~exp=1724486204~hmac=5e1a39de22916dfefa59671260413a9ea5d4a0788321c16fa925ed74eada515f&w=1060"
                     alt="Description of image"
                   />
                 </div>
@@ -123,8 +126,7 @@ export default function Corporate_Events() {
             </div>
           </div>
           <div className="corp-heading-bottom">
-            <h6 className={"head"}>The Navi Mumbai Advantage:
-</h6>
+            <h6 className={"head"}>The Navi Mumbai Advantage:</h6>
             <p>{data[17]}</p>
           </div>
         </div>

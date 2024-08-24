@@ -89,6 +89,8 @@ h5 {
 .service2_contact-cont h2 {
   font-size: 30px;
   font-weight: 600;
+  font-family: "EB Garamond", serif !important;
+
 }
 
 .service2_contact-cont p {
@@ -178,7 +180,18 @@ h5 {
   border-bottom-right-radius: 30px;
   /* display: contents; */
 }
+.service-second-column-col{
+  font-family: "EB Garamond", serif !important;
 
+}
+.bar_heading_cont h5{
+  font-family: "EB Garamond", serif !important;
+
+}
+.getintouch h2{
+  font-family: "EB Garamond", serif !important;
+
+}
 .service2_contact-cont {
   background-color: #fff;
   padding: 20px;
@@ -188,6 +201,8 @@ h5 {
 
 .service2_contact-cont h2 {
   font-size: 24px;
+    font-family: "EB Garamond", serif !important;
+
   margin-bottom: 10px;
   color: #333;
 }
@@ -224,7 +239,9 @@ h5 {
 .bar_heading_cont {
   margin-bottom: 15px;
   align-items: center;
+  
 }
+
 
 .service_sec_2_bar {
   /* width: 50px; */
@@ -267,6 +284,10 @@ h5 {
 .widget-list__link.active {
   font-weight: 500;
 }
+.title-descp-cont p {
+  font-family: 'Sergio', sans-serif m !important;
+}
+
 /* Medium Devices (Desktops, 1024px and below) */
 @media (max-width: 1024px) {
   .service_section_container {
@@ -283,10 +304,13 @@ h5 {
 
   .title-descp-cont p {
     font-size: 0.9rem;
+    font-family: 'Sergio', sans-serif m !important;
   }
 
   h5 {
     font-size: 1.1rem;
+    font-family: "EB Garamond", serif !important;
+
   }
 
   .service2_contact-cont h2 {
