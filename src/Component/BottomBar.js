@@ -55,13 +55,14 @@ function BottomBar() {
                       <li>
                         <span className="titl">E:</span>
                         <span className="desc">
-                        info@hrudayaevents.com <br />
+                          info@hrudayaevents.com <br />
                         </span>
                       </li>
                       <li>
                         <span className="titl">A:</span>
                         <span className="desc">
-                        7/D/17, Chandralok Soc, Sector 10, Kopar Khairane, Navi Mumbai, Maharashtra 400709
+                          7/D/17, Chandralok Soc, Sector 10, Kopar Khairane,
+                          Navi Mumbai, Maharashtra 400709
                         </span>
                       </li>
                     </ul>
@@ -70,23 +71,25 @@ function BottomBar() {
                 <div className="col mb-8">
                   <div className="footer-widget footer-list">
                     <h3 className="footer-title">Social media</h3>
-                    <ul className="soical-ul">
-                      <Link className="google-plus" to="">
-                        <i className="fa fa-google-plus">
-                          <FaInstagram />
-                        </i>
-                      </Link>
-                      <Link className="google-plus" to="">
-                        <i className="fa fa-facebook">
-                          <FaFacebookF />
-                        </i>
-                      </Link>
-                      <Link className="google-plus" to="">
-                        <i className="fa fa-facebook">
-                          <CiTwitter />
-                        </i>
-                      </Link>
-                    </ul>
+                    <div style={{width:120, paddingLeft:20}} className="social-cont">
+                      <ul className="soical-ul">
+                        <Link className="google-plus" to="">
+                          <i className="fa fa-google-plus">
+                            <FaInstagram />
+                          </i>
+                        </Link>
+                        <Link className="google-plus" to="">
+                          <i className="fa fa-facebook">
+                            <FaFacebookF />
+                          </i>
+                        </Link>
+                        <Link className="google-plus" to="">
+                          <i className="fa fa-facebook">
+                            <CiTwitter />
+                          </i>
+                        </Link>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>

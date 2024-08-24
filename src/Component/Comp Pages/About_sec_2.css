@@ -25,13 +25,13 @@
   flex-direction: row;
 }
 
-.col {
+/* .col {
   flex: 1;
   max-width: 45%;
   min-width: 280px;
   display: flex;
   justify-content: center;
-}
+} */
 
 .about-card {
   background-color: rgba(0, 0, 0, 0.3);
@@ -98,6 +98,7 @@
   }
   .about-custom-row {
     flex-direction: column;
+    gap:30px
   }
   .about-col-left-cont {
     display: contents;

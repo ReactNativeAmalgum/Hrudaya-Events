@@ -1,6 +1,7 @@
 import { Image } from "antd";
 import React from "react";
 import './GalleryPage.css'
+import BottomBar from "../../Component/BottomBar";
 export default function GalleryPage() {
   return (
     <>
@@ -79,7 +80,7 @@ export default function GalleryPage() {
     </div>
   </section>
 </section>
-
+<BottomBar/>
     </>
   );
 }

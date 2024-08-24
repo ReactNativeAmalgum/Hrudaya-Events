@@ -30,7 +30,7 @@
     padding-top: 45px;
     padding-bottom: 15px;
   }
-  
+  e
   .footer-about p,
   .footer-newsletter p,
   .copyright p {
@@ -138,46 +138,63 @@
     } */
   }
 
-  /* For screens below 600px */
-  @media screen and (max-width: 600px) {
-    .bg-black {
-      margin-top: 20px;
-    }
-  
-    .accordion-item {
-      padding-top: 8px;
-      margin-top: 8px;
-    }
-  
-    .footer-color {
-      padding-top: 20px;
-      padding-bottom: 8px;
-    }
-  
-    .footer-logo img {
-      width: 100px;
-    }
-  
-    .soical-ul {
-      flex-direction: row;
-      align-items: center;
-    }
-    .soical-ul i {
-      font-size: 20px; /* Slightly smaller size for mobile */
-    }
-  
-    .facebook {
-      padding: 0 15px;
-    }
-    .footer-link-li{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .footer-title{
-      text-align: center;
-    }
-
+ /* For screens below 600px */
+@media screen and (max-width: 600px) {
+  .bg-black {
+    margin-top: 20px;
   }
-  
+
+  .accordion-item {
+    padding-top: 8px;
+    margin-top: 8px;
+  }
+
+  .footer-color {
+    padding-top: 20px;
+    padding-bottom: 8px;
+  }
+
+  .footer-logo img {
+    width: 100px;
+  }
+
+  .soical-ul {
+    flex-direction: row;
+    align-items: flex-start; /* Align icons to the left */
+    justify-content: flex-start; /* Shift icons towards the left */
+  }
+
+  .soical-ul i {
+    font-size: 20px; /* Slightly smaller size for mobile */
+  }
+
+  .facebook {
+    padding: 0 15px;
+  }
+
+  .footer-link-li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align links to the left */
+    align-items: flex-start; /* Shift links towards the left */
+  }
+
+  .footer-title {
+    text-align: left; /* Align title to the left */
+  }
+
+  .footer-widget,
+  .footer-about p,
+  .footer-newsletter p,
+  .copyright p {
+    text-align: left !important; /* Align all text to the left */
+  }
+  .social-cont{
+    /* background-color: aqua; */
+    display: flex;
+    padding-left: 15px;
+  }
+  .soical-ul{
+    gap:15px
+  }
+}
