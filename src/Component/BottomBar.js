@@ -2,6 +2,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
 import logo from "./Images/logo.png";
+import logo2 from './Images/logo2.png'
 import { Link } from "react-router-dom";
 import "./BottomBar.css";
 function BottomBar() {
@@ -16,7 +17,9 @@ function BottomBar() {
                   <div className="footer-widget footer-about">
                     <div className="footer-logo">
                       <Link to="/">
-                        <img src={logo} alt="logo" />
+                        <img style={{
+                          backgroundColor:'white'
+                        }} src={logo2} alt="logo" />
                       </Link>
                     </div>
                   </div>

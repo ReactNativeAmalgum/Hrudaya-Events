@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "./Images/logo.png";
+import logo2 from './Images/logo2.png'
 import "./NavBar.css";
 import { Link, useLocation } from "react-router-dom";
 import { ServiceData } from "../Constant/ServiceData";
@@ -31,9 +32,10 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="#home">
           <img
-            style={{ width: 100, height: "auto", borderRadius: "50%" }}
+            style={{ width: 100, height: "auto", borderColor:"white", borderWidth:1,borderRadius: "50%" }}
             alt="logo"
-            src={logo}
+            src={logo2}
+            className="logo-img"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

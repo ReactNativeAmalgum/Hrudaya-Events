@@ -2,10 +2,17 @@
   width: 100px !important;
   height: auto;
 }
-
+.logo-img {
+  width: 100px;
+  height: auto;
+  background-color: aliceblue;
+  border: 1px solid white; /* Adds border color and width */
+  border-radius: 50%; /* Makes the image circular */
+}
 .bg-body-tertiary {
   background-color: black !important;
 }
+
 
 /******************NAVLINKS******************/
 
