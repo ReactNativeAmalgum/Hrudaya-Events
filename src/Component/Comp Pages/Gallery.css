@@ -8,50 +8,50 @@
   justify-content: center;
   gap: 15%;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.9);}
-
-/* Container for the images */
-.gallery-section-cont h2{
-  color: white;
-  font-size: 2.5rem;
-  padding-bottom: 10px;
-  font-family: "EB Garamond", serif !important;
-
+  background-color: rgba(0, 0, 0, 0.9);
 }
-/* Responsive grid layout for images */
-
-/* Each column */
-.col-md-4 {
-  flex: 1 1 30%;
-  max-width: 100%;
+.gallery-custom-row {
+  /* margin-bottom: 20px; */
 }
 
-/* Styling for image container */
-.image-container {
-  /* border: 2px solid #1077dd; */
-  border-radius: 8px;
-  overflow: hidden;
-  position: relative;
+.gallery-custom-col {
+  padding: 10px;
 }
 
-/* Ensure images are responsive and fit within the container */
-.img-fluid {
+.about-image-container {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 350px;
+  overflow: hidden;
 }
 
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  /* .col-md-4 {
-    flex: 1 1 45%;
-  } */
+.about-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-@media (max-width: 767px) {
-  .gallery-custom-row{
-    display: block;
-    flex-direction: column;
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .gallery-custom-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .gallery-custom-row {
+    /* margin-bottom: 15px; */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gallery-custom-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .gallery-custom-col {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
   }
 }

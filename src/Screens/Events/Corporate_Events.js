@@ -3,14 +3,18 @@ import NavBar from "../../Component/NavBar";
 import BottomBar from "../../Component/BottomBar";
 import "./Corporate.css";
 import { EventData } from "../../Constant/EventData";
-
+import corp1 from '../../Component/Images/corp1.jpeg'
+import corp2 from '../../Component/Images/corp2.jpeg'
+import corp3 from '../../Component/Images//corp3.jpeg'
+import corp4 from '../../Component/Images/corp4.jpeg'
+import corp5 from '../../Component/Images/corp4.jpg'
 export default function Corporate_Events() {
   const data = EventData.map((a, s) => <p>{a.para}</p>);
   return (
     <>
       <section
         style={{
-          backgroundImage: `url('https://img.freepik.com/free-photo/wedding-table-arrangement-outdoors_23-2149617132.jpg?t=st=1724482924~exp=1724486524~hmac=12d2a1172999851d11d64fbebb6c16a6bd6ab55535d16dddd6917b81c945242f&w=1060')`,
+          backgroundImage: corp1 ,
         }}
         className="section1_service_banner"
       >
@@ -25,7 +29,7 @@ export default function Corporate_Events() {
             <div className="col-6 about-special-col corp-section2-col-left-cont">
               <div className="corp-image-container">
                 <img
-                  src="https://img.freepik.com/free-photo/female-wedding-planner-working-ceremony_23-2150167261.jpg?t=st=1724482840~exp=1724486440~hmac=87d06fc93511a68208266327d0a7d66f532398fa6624c6b3e5f1d23888188d31&w=1060"
+                  src= {corp2}
                   alt="Story Image"
                   className="card-image"
                 />
@@ -64,7 +68,7 @@ export default function Corporate_Events() {
         <div className="corp-img-cont">
           <img
             className="corp-img"
-            src="https://img.freepik.com/free-photo/decorated-banquet-hall-with-flowers_8353-10058.jpg?t=st=1724482721~exp=1724486321~hmac=fcb827c32cf75fefc324140549f1060eade0fc8e5c6b565342c0052ca3489be3&w=1060"
+            src={corp3}
             alt={"family img"}
           />
         </div>
@@ -91,7 +95,7 @@ export default function Corporate_Events() {
               <div class="order-1 order-md-2 corp-custom-col corp-right-col col-6">
                 <div className="choose-cont">
                   <img
-                    src="https://img.freepik.com/free-photo/colleagues-having-fun-business-event_23-2149370528.jpg?t=st=1724482679~exp=1724486279~hmac=107281657b387828e8c5e90e97ac27557041be981eda96d3b4ba30637f9aa3f6&w=1060"
+                    src={corp4}
                     alt="Description of image"
                   />
                 </div>
@@ -118,7 +122,7 @@ export default function Corporate_Events() {
               <div class="corp-custom-col corp-right-col col-6">
                 <div className="choose-cont">
                   <img
-                    src="https://img.freepik.com/free-photo/new-year-spend-with-friends-celebrating_23-2149196985.jpg?t=st=1724482604~exp=1724486204~hmac=5e1a39de22916dfefa59671260413a9ea5d4a0788321c16fa925ed74eada515f&w=1060"
+                    src={corp5}
                     alt="Description of image"
                   />
                 </div>

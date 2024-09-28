@@ -44,8 +44,7 @@ export default function Contact() {
                         <div className="info-content">
                           <h3 className="title">Address</h3>
                           <p className="width">
-                            A220, Business complex, LODHA AMARA, Kolshet Rd,
-                            Thane, Maharashtra 400607
+                          Office no. G-40, Haware Fantasia Business park, Sector - 30A, Vashi, Navi Mumbai
                           </p>
                         </div>
                       </div>
@@ -67,19 +66,17 @@ export default function Contact() {
                         </div>
                         <div className="info-content">
                           <h3 className="title">Email</h3>
-                          <p>hnymumbai@gmail.com</p>
+                          <p>pgroominmumbai@gmail.com
+                          </p>
                         </div>
                         <div className="info-content">
                           <h3 className="title">Follow Us</h3>
                           <div className="social-icons-container">
-                            <a className="twitter" href="#">
+                            <a className="twitter" href="https://www.facebook.com/hrudayaevent">
                             <FaFacebookF/>
 
                             </a>
-                            <a className="twitter" href="#">
-                              <FaTwitter />
-                            </a>
-                            <a className="instagram" href="#">
+                            <a className="instagram" href="https://www.instagram.com/hrudaya_events/">
                               <FaInstagram />
                             </a>
                           </div>

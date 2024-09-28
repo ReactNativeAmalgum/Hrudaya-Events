@@ -215,6 +215,7 @@ li {
 }
 .corp-para-cont li{
   font-size: 18px;
+  text-decoration: none;
 }
 .corp-section2-cont {
   display: flex;

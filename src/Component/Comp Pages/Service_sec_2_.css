@@ -258,6 +258,7 @@ h5 {
 
 .widget-list__item {
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .widget-list__link {

@@ -18,7 +18,7 @@ function BottomBar() {
                     <div className="footer-logo">
                       <Link to="/">
                         <img style={{
-                          backgroundColor:'white'
+                          backgroundColor: 'white'
                         }} src={logo2} alt="logo" />
                       </Link>
                     </div>
@@ -58,14 +58,13 @@ function BottomBar() {
                       <li>
                         <span className="titl">E:</span>
                         <span className="desc">
-                          info@hrudayaevents.com <br />
+                        pgroominmumbai@gmail.com <br />
                         </span>
                       </li>
                       <li>
                         <span className="titl">A:</span>
                         <span className="desc">
-                          7/D/17, Chandralok Soc, Sector 10, Kopar Khairane,
-                          Navi Mumbai, Maharashtra 400709
+                          Office no. G-40, Haware Fantasia Business park, Sector-30A, Vashi,Navi Mumbai
                         </span>
                       </li>
                     </ul>
@@ -74,23 +73,23 @@ function BottomBar() {
                 <div className="col mb-8">
                   <div className="footer-widget footer-list">
                     <h3 className="footer-title">Social media</h3>
-                    <div style={{width:120, paddingLeft:20}} className="social-cont">
+                    <div style={{ width: 120, paddingLeft: 20 }} className="social-cont">
                       <ul className="soical-ul">
-                        <Link className="google-plus" to="">
+                        <a className="google-plus" href="https://www.instagram.com/hrudaya_events/">
                           <i className="fa fa-google-plus">
                             <FaInstagram />
                           </i>
-                        </Link>
-                        <Link className="google-plus" to="">
+                        </a>
+                        <a  className="google-plus" href="https://www.facebook.com/hrudayaevent">
                           <i className="fa fa-facebook">
                             <FaFacebookF />
                           </i>
-                        </Link>
-                        <Link className="google-plus" to="">
+                        </a>
+                        {/* <Link className="google-plus" to="">
                           <i className="fa fa-facebook">
                             <CiTwitter />
                           </i>
-                        </Link>
+                        </Link> */}
                       </ul>
                     </div>
                   </div>

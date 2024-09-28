@@ -9,7 +9,7 @@ import venue from "../../Component/Images/venue.jpg";
 import video from "../../Component/Images/photography.jpg";
 import celebrity from "../../Component/Images/celebrity.jpg";
 import sangeet from "../../Component/Images/sangeet.jpg";
-import live_band from "../../Component/Images/live_band.jpg";
+import live_band from "../../Component/Images/live4.jpeg";
 import theme_deco from "../../Component/Images/theme.jpg";
 import make_up from "../../Component/Images/mehndi.jpeg";
 // Import Swiper styles

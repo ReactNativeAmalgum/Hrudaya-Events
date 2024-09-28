@@ -5,7 +5,7 @@ export const EventData = [
   },
   {
     id: 2,
-    para: `*Elevate Your Corporate Events with Expert Planning*`,
+    para: `Elevate Your Corporate Events with Expert Planning`,
   },
   {
     id: 3,
@@ -17,23 +17,23 @@ export const EventData = [
   },
   {
     id: 5,
-    para: `*Tailored Solutions*: We understand that each corporate event is unique. Our planners work closely with you to understand your specific goals, target audience, and desired outcomes, ensuring that every detail is customized to meet your needs.`,
+    para: `Tailored Solutions: We understand that each corporate event is unique. Our planners work closely with you to understand your specific goals, target audience, and desired outcomes, ensuring that every detail is customized to meet your needs.`,
   },
   {
     id: 6,
-    para: `*Comprehensive Event Management*: From concept development to execution, we handle all aspects of your event, including venue selection, theme development, catering, entertainment, logistics, and more.`,
+    para: `Comprehensive Event Management: From concept development to execution, we handle all aspects of your event, including venue selection, theme development, catering, entertainment, logistics, and more.`,
   },
   {
     id: 7,
-    para: `*Creative and Innovative Ideas*: Our team is passionate about creating innovative and engaging events. We stay up-to-date with the latest trends and industry best practices to deliver fresh and exciting experiences.`,
+    para: `Creative and Innovative Ideas: Our team is passionate about creating innovative and engaging events. We stay up-to-date with the latest trends and industry best practices to deliver fresh and exciting experiences.`,
   },
   {
     id: 8,
-    para: `*Budget-Friendly Solutions*: We believe that exceptional events can be achieved within any budget. Our planners work diligently to maximize your investment and provide cost-effective solutions without compromising on quality.`,
+    para: `Budget-Friendly Solutions: We believe that exceptional events can be achieved within any budget. Our planners work diligently to maximize your investment and provide cost-effective solutions without compromising on quality.`,
   },
   {
     id: 9,
-    para: `*Stress-Free Planning*: Let us take the stress out of event planning. Our experienced team will handle all the details, allowing you to focus on your business and enjoy the success of your event.`,
+    para: `Stress-Free Planning: Let us take the stress out of event planning. Our experienced team will handle all the details, allowing you to focus on your business and enjoy the success of your event.`,
   },
   {
     id: 10,
@@ -41,27 +41,27 @@ export const EventData = [
   },
   {
     id: 11,
-    para: `*Conference and Seminar Planning*: We specialize in organizing conferences, seminars, and workshops, ensuring seamless execution and maximum attendee engagement.`,
+    para: `Conference and Seminar Planning: We specialize in organizing conferences, seminars, and workshops, ensuring seamless execution and maximum attendee engagement.`,
   },
   {
     id: 12,
-    para: `*Product Launch Events*: Create memorable product launches that generate excitement and drive sales.`,
+    para: `Product Launch Events: Create memorable product launches that generate excitement and drive sales.`,
   },
   {
     id: 13,
-    para: `*Team Building Activities*: Foster teamwork and camaraderie through engaging and interactive team-building activities.`,
+    para: `Team Building Activities: Foster teamwork and camaraderie through engaging and interactive team-building activities.`,
   },
   {
     id: 14,
-    para: `*Annual Meetings and Conventions*: Plan and execute successful annual meetings and conventions that align with your company's objectives.`,
+    para: `Annual Meetings and Conventions: Plan and execute successful annual meetings and conventions that align with your company's objectives.`,
   },
   {
     id: 15,
-    para: `*Awards and Gala Dinners*: Organize prestigious awards ceremonies and gala dinners to celebrate achievements and build brand recognition.`,
+    para: `Awards and Gala Dinners: Organize prestigious awards ceremonies and gala dinners to celebrate achievements and build brand recognition.`,
   },
   {
     id: 16,
-    para: `*Incentive Travel Programs*: Reward your employees with unforgettable incentive travel experiences that boost morale and loyalty.`,
+    para: `Incentive Travel Programs: Reward your employees with unforgettable incentive travel experiences that boost morale and loyalty.`,
   },
   {
     id: 17,
@@ -92,31 +92,31 @@ export const EventData2 = [
   },
   {
     id: 5,
-    para: `*Event Planning and Coordination: From concept to execution, our team will handle every aspect of your family event, ensuring a seamless experience.`,
+    para: `Event Planning and Coordination: From concept to execution, our team will handle every aspect of your family event, ensuring a seamless experience.`,
   },
   {
     id: 6,
-    para: `*Venue Selection: We'll help you find the perfect venue that suits your family's needs and preferences, whether it's a grand ballroom or a cozy backyard setting.`,
+    para: `Venue Selection: We'll help you find the perfect venue that suits your family's needs and preferences, whether it's a grand ballroom or a cozy backyard setting.`,
   },
   {
     id: 7,
-    para: `*Theme and Decor: Our creative experts will design a unique theme that reflects your family's personality and create stunning decor to match.`,
+    para: `Theme and Decor: Our creative experts will design a unique theme that reflects your family's personality and create stunning decor to match.`,
   },
   {
     id: 8,
-    para: `*Entertainment and Activities: We'll curate a variety of entertainment options, including live music, games, and activities, to keep everyone engaged and entertained.`,
+    para: `Entertainment and Activities: We'll curate a variety of entertainment options, including live music, games, and activities, to keep everyone engaged and entertained.`,
   },
   {
     id: 9,
-    para: `*Catering and Food: Our trusted caterers will provide delicious and customized food options to suit all tastes and dietary restrictions.`,
+    para: `Catering and Food: Our trusted caterers will provide delicious and customized food options to suit all tastes and dietary restrictions.`,
   },
   {
     id: 10,
-    para: `*Guest List Management: We'll assist you in creating a guest list and managing RSVPs to ensure a smooth and efficient event.`,
+    para: `Guest List Management: We'll assist you in creating a guest list and managing RSVPs to ensure a smooth and efficient event.`,
   },
   {
     id: 11,
-    para: `*Budget Management: We'll work within your budget to create a memorable event without breaking the bank.`,
+    para: `Budget Management: We'll work within your budget to create a memorable event without breaking the bank.`,
   },
   {
     id: 12,
@@ -124,19 +124,19 @@ export const EventData2 = [
   },
   {
     id: 13,
-    para: `*Expertise and Experience: Our team has years of experience in planning family events, ensuring a successful and stress-free experience.`,
+    para: `Expertise and Experience: Our team has years of experience in planning family events, ensuring a successful and stress-free experience.`,
   },
   {
     id: 14,
-    para: `*Personalized Service: We understand that every family is unique, and we'll tailor our services to meet your specific needs and preferences.`,
+    para: `Personalized Service: We understand that every family is unique, and we'll tailor our services to meet your specific needs and preferences.`,
   },
   {
     id: 15,
-    para: `*Attention to Detail: We pay close attention to every detail, ensuring that your family event is flawless and memorable.`,
+    para: `Attention to Detail: We pay close attention to every detail, ensuring that your family event is flawless and memorable.`,
   },
   {
     id: 16,
-    para: `*Reliability and Professionalism: You can count on our team to deliver exceptional service and handle any challenges that may arise.`,
+    para: `Reliability and Professionalism: You can count on our team to deliver exceptional service and handle any challenges that may arise.`,
   },
   {
     id: 17,

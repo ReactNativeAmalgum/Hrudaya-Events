@@ -6,35 +6,46 @@ import "swiper/css/grid";
 import "swiper/css/pagination";
 import "./Gallery.css";
 import { Image } from "antd";
-
+import weeding from '../Images/desti-wedding1.jpeg'
+import sangeet from '../Images/sangeet1.jpeg'
+import catering1 from '../Images/catering1.jpg'
+import celebrity from '../Images/celebrity1.jpg'
+import corporate from '../Images/coporate_meeting.jpg'
+import decoration from '../Images/decoration3.jpg'
 export default function HomeGallery() {
   return (
     <section className="gallery-section-cont">
       <h2>Gallery</h2>
       <section className="container">
         <div className="row gallery-custom-row">
-          <div className="col-md-4">
-            <div className="image-container">
+          <div className="col-md-4 col-sm-12 gallery-custom-col">
+            <div className="about-image-container">
               <Image
-                src="https://images.pexels.com/photos/50675/banquet-wedding-society-deco-50675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src={weeding}
+                width={'100%'}
+                height={'100%'}
                 alt="Image 1"
                 className="img-fluid"
               />
             </div>
           </div>
-          <div className="col-md-4">
-            <div className="image-container">
+          <div className="col-md-4 col-sm-12 gallery-custom-col">
+            <div className="about-image-container">
               <Image
-                src="https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                width={'100%'}
+                height={'100%'}
+                src={corporate}
                 alt="Image 2"
                 className="img-fluid"
               />
             </div>
           </div>
-          <div className="col-md-4">
-            <div className="image-container">
+          <div className="col-md-4 col-sm-12 gallery-custom-col">
+            <div className="about-image-container">
               <Image
-                src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                width={'100%'}
+                height={'100%'}
+                src={celebrity}
                 alt="Image 3"
                 className="img-fluid"
               />
@@ -42,29 +53,35 @@ export default function HomeGallery() {
           </div>
         </div>
         <div className="row gallery-custom-row">
-          <div className="col-md-4">
-            <div className="image-container">
+          <div className="col-md-4 col-sm-12 gallery-custom-col">
+            <div className="about-image-container">
               <Image
-                src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Image 4"
+                src={sangeet}
+                width={'100%'}
+                height={'100%'}
+                alt="Image 1"
                 className="img-fluid"
               />
             </div>
           </div>
-          <div className="col-md-4">
-            <div className="image-container">
+          <div className="col-md-4 col-sm-12 gallery-custom-col">
+            <div className="about-image-container">
               <Image
-                src="https://images.pexels.com/photos/16408/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Image 5"
+                width={'100%'}
+                height={'100%'}
+                src={catering1}
+                alt="Image 2"
                 className="img-fluid"
               />
             </div>
           </div>
-          <div className="col-md-4">
-            <div className="image-container">
+          <div className="col-md-4 col-sm-12 gallery-custom-col">
+            <div className="about-image-container">
               <Image
-                src="https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Image 6"
+                width={'100%'}
+                height={'100%'}
+                src={decoration}
+                alt="Image 3"
                 className="img-fluid"
               />
             </div>

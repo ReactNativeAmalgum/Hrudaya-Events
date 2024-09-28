@@ -3,7 +3,9 @@ import NavBar from "../../Component/NavBar";
 import BottomBar from "../../Component/BottomBar";
 import "./Corporate.css";
 import { EventData, EventData2 } from "../../Constant/EventData";
-import familyImg from "../../Component/Images/family_events.jpg";
+import familyImg1 from "../../Component/Images/family_events.jpg";
+import familyImg2 from "../../Component/Images/family_events2.jpg";
+import familyImg3 from "../../Component/Images/family_events3.jpg";
 
 export default function family_events() {
   const data = EventData2.map((a, s) => <p>{a.para}</p>);
@@ -25,7 +27,7 @@ export default function family_events() {
             <div className="col-6 about-special-col corp-section2-col-left-cont">
               <div className="corp-image-container">
                 <img
-                  src="https://img.freepik.com/free-photo/family-posing-together-christmas-tree_23-2149136345.jpg?t=st=1724473300~exp=1724476900~hmac=aa5a9c21cc8803a4dea6b4b9d103fa3f5b2cf0614efe0c7d307278d53bd88c13&w=1060"
+                  src={familyImg1}
                   alt="Story Image"
                   className="card-image"
                 />
@@ -59,7 +61,7 @@ export default function family_events() {
         <div className="corp-img-cont">
           <img
             className="corp-img"
-            src="https://img.freepik.com/free-photo/full-shot-people-posing-wedding_23-2149956421.jpg?t=st=1724473370~exp=1724476970~hmac=61e55bf753693eb5d85244946236f5b698c4b11da701669dd4169c8c13f54018&w=1060"
+            src={familyImg2}
             alt={"family img"}
           />
         </div>
@@ -81,7 +83,7 @@ export default function family_events() {
               <div class="order-1 order-md-2 corp-custom-col corp-right-col col-6">
                 <div className="choose-cont">
                   <img
-                    src="https://img.freepik.com/free-photo/young-beautiful-couple-man-woman-sitting-table-with-cups-tea-happy-love-christmas-decorated-room-with-christmas-tree-background_141793-42547.jpg?t=st=1724473822~exp=1724477422~hmac=75b931ac1738e7686e11f71eed5fb4232f5a55f5e1a7e58a38a93d367ae95aaf&w=996"
+                    src={familyImg3}
                     alt="Description of image"
                   />
                 </div>
@@ -106,7 +108,7 @@ export default function family_events() {
               <div class="corp-custom-col corp-right-col col-6">
                 <div className="choose-cont">
                   <img
-                    src="https://img.freepik.com/free-photo/medium-shot-happy-family-birthday_23-2149203181.jpg?t=st=1724473781~exp=1724477381~hmac=48c36eaa95531ddbb88aa2f95d11e6e54e768f6324fcc5769181dbfc19b14185&w=1060"
+                    src={familyImg2}
                     alt="Description of image"
                   />
                 </div>

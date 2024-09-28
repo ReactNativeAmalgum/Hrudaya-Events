@@ -3,7 +3,9 @@ import NavBar from "../../Component/NavBar";
 import BottomBar from "../../Component/BottomBar";
 import "./Corporate.css";
 import { EventData, WeedingData } from "../../Constant/EventData";
-
+import desti1 from '../../Component/Images/desti-wedding1.jpeg'
+import desti2 from '../../Component/Images/desti-wedding2.jpg'
+import desti3 from '../../Component/Images/desti-wedding3.jpg'
 export default function Destination() {
   const data = WeedingData.map((a, s) => <p>{a.para1}</p>);
   return (
@@ -20,7 +22,7 @@ export default function Destination() {
             <div className="col-6 about-special-col corp-section2-col-left-cont">
               <div className="corp-image-container">
                 <img
-                  src="https://img.freepik.com/free-photo/couple-getting-married-hot-air-balloon_23-2151158069.jpg?t=st=1724472282~exp=1724475882~hmac=c721a0f2cdadbb9a1a845515e6472cc8d58e7335509b7c4324ad47513022af7a&w=1060"
+                  src={desti1}
                   alt="Story Image"
                   className="card-image"
                 />
@@ -59,7 +61,7 @@ export default function Destination() {
         <div className="corp-img-cont">
           <img
             className="corp-img"
-            src="https://img.freepik.com/free-photo/photorealistic-wedding-venue-with-intricate-decor-ornaments_23-2151481506.jpg?t=st=1724472848~exp=1724476448~hmac=65a246cfaf240a17de6d951f37a92c6ec9cb77f42902916549a558d48b874e18&w=1060"
+            src={desti2}
             alt={"corporate img"}
           />
         </div>
@@ -87,7 +89,7 @@ export default function Destination() {
               <div class="order-1 order-md-2 corp-custom-col corp-right-col col-6">
                 <div className="choose-cont">
                   <img
-                    src="https://img.freepik.com/free-photo/romantic-dining-sunset-dinner-ocean_1203-5255.jpg?t=st=1724435563~exp=1724439163~hmac=7c4922dd44602ae74c14c4e844b1dc7b3db3383abf0b213e7722099990746e34&w=1060"
+                    src={desti2}
                     alt="Description of image"
                   />
                 </div>
@@ -109,7 +111,7 @@ export default function Destination() {
               <div class="corp-custom-col corp-right-col col-6">
                 <div className="choose-cont">
                   <img
-                    src="https://img.freepik.com/free-photo/romantic-dining-sunset-dinner-ocean_1203-5255.jpg?t=st=1724435563~exp=1724439163~hmac=7c4922dd44602ae74c14c4e844b1dc7b3db3383abf0b213e7722099990746e34&w=1060"
+                    src={desti3}
                     alt="Description of image"
                   />
                 </div>
